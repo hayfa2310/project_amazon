@@ -1,4 +1,4 @@
-# Amazon Scraper Updating Product
+# Amazon Scrapper Updating Product
 
 The objective of this project is to retrieve the new reviews of an Amazon product given a number of days through scrapping. The data extracted by the Scraper can be fetched by accessing the endpoints given by the Flask RESTful API.
 
