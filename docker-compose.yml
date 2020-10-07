@@ -1,0 +1,28 @@
+version: "3"
+services:
+  web:
+    networks:
+      test:
+    build:
+      context: ./amazon_project
+    ports:
+      - "5000:5000"
+  new_prod:
+    networks:
+      test:
+    container_name: new_prod
+    build:
+      context: ./amazon
+    ports:
+      - "5001:5001"
+  update_prod:
+    networks:
+      test:
+    container_name: update_prod
+    build:
+      context: ./update_amazon
+    ports:
+      - "5002:5002"
+networks:
+  test:
+    driver: bridge

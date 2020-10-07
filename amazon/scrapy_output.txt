@@ -1,0 +1,2787 @@
+2020-10-03 13:27:39 [scrapy.extensions.telnet] INFO: Telnet Password: 7cb9cd9fd3521f31
+2020-10-03 13:27:40 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-10-03 13:27:40 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'random_useragent.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy_crawlera.CrawleraMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-10-03 13:27:40 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-10-03 13:27:40 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2020-10-03 13:27:40 [scrapy.core.engine] INFO: Spider opened
+2020-10-03 13:27:40 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-10-03 13:27:40 [root] INFO: Using crawlera at http://proxy.crawlera.com:8010 (apikey: 7cc8380)
+2020-10-03 13:27:40 [root] INFO: CrawleraMiddleware: disabling download delays on Scrapy side to optimize delays introduced by Crawlera. To avoid this behaviour you can use the CRAWLERA_PRESERVE_DELAY setting but keep in mind that this may slow down the crawl significantly
+2020-10-03 13:27:40 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-10-03 13:27:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.nl/product-reviews/B078R7FC7G> (referer: None)
+2020-10-03 13:27:42 [product_reviews] INFO: User Agent : b"'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36'"
+2020-10-03 13:27:42 [product_reviews] INFO: Proxy ip address is b'192.210.219.146:3128'
+2020-10-03 13:27:42 [product_reviews] WARNING:  Blocked no information on this page
+2020-10-03 13:27:42 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-10-03 13:27:42 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'crawlera/delay/reset_backoff': 1,
+ 'crawlera/request': 1,
+ 'crawlera/request/method/GET': 1,
+ 'crawlera/response': 1,
+ 'crawlera/response/status/200': 1,
+ 'downloader/request_bytes': 384,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 65058,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 2.664866,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 10, 3, 12, 27, 42, 765273),
+ 'log_count/DEBUG': 1,
+ 'log_count/INFO': 14,
+ 'log_count/WARNING': 1,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2020, 10, 3, 12, 27, 40, 100407)}
+2020-10-03 13:27:42 [scrapy.core.engine] INFO: Spider closed (finished)
+2020-10-03 13:27:42 [werkzeug] INFO: 127.0.0.1 - - [03/Oct/2020 13:27:42] "[37mGET /scrape HTTP/1.1[0m" 200 -
+2020-10-03 13:27:45 [werkzeug] INFO: 127.0.0.1 - - [03/Oct/2020 13:27:45] "[32mPOST / HTTP/1.1[0m" 302 -
+2020-10-03 13:27:47 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'amazon',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 32,
+ 'COOKIES_ENABLED': False,
+ 'DOWNLOAD_TIMEOUT': 600,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_ENCODING': 'UTF-8',
+ 'LOG_FILE': './scrapy_output.txt',
+ 'LOG_STDOUT': True,
+ 'NEWSPIDER_MODULE': 'amazon.spiders',
+ 'SPIDER_MODULES': ['amazon.spiders']}
+2020-10-03 13:27:47 [scrapy.extensions.telnet] INFO: Telnet Password: 5648192eeca62e68
+2020-10-03 13:27:47 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-10-03 13:27:47 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'random_useragent.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy_crawlera.CrawleraMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-10-03 13:27:47 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-10-03 13:27:47 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2020-10-03 13:27:47 [scrapy.core.engine] INFO: Spider opened
+2020-10-03 13:27:47 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-10-03 13:27:47 [root] INFO: Using crawlera at http://proxy.crawlera.com:8010 (apikey: 7cc8380)
+2020-10-03 13:27:47 [root] INFO: CrawleraMiddleware: disabling download delays on Scrapy side to optimize delays introduced by Crawlera. To avoid this behaviour you can use the CRAWLERA_PRESERVE_DELAY setting but keep in mind that this may slow down the crawl significantly
+2020-10-03 13:27:47 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-10-03 13:27:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.nl/product-reviews/B07XDJKGBQ> (referer: None)
+2020-10-03 13:27:49 [product_reviews] INFO: User Agent : b"'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'"
+2020-10-03 13:27:49 [product_reviews] INFO: Proxy ip address is b'104.144.59.130:3128'
+2020-10-03 13:27:49 [product_reviews] WARNING:  Blocked no information on this page
+2020-10-03 13:27:49 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-10-03 13:27:49 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'crawlera/delay/reset_backoff': 1,
+ 'crawlera/request': 1,
+ 'crawlera/request/method/GET': 1,
+ 'crawlera/response': 1,
+ 'crawlera/response/status/200': 1,
+ 'downloader/request_bytes': 400,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 64897,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 2.456036,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 10, 3, 12, 27, 49, 749734),
+ 'log_count/DEBUG': 1,
+ 'log_count/INFO': 14,
+ 'log_count/WARNING': 1,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2020, 10, 3, 12, 27, 47, 293698)}
+2020-10-03 13:27:49 [scrapy.core.engine] INFO: Spider closed (finished)
+2020-10-03 13:27:49 [werkzeug] INFO: 127.0.0.1 - - [03/Oct/2020 13:27:49] "[37mGET /scrape HTTP/1.1[0m" 200 -
+2020-10-03 13:28:10 [werkzeug] INFO: 127.0.0.1 - - [03/Oct/2020 13:28:10] "[32mPOST / HTTP/1.1[0m" 302 -
+2020-10-03 13:28:12 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'amazon',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 32,
+ 'COOKIES_ENABLED': False,
+ 'DOWNLOAD_TIMEOUT': 600,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_ENCODING': 'UTF-8',
+ 'LOG_FILE': './scrapy_output.txt',
+ 'LOG_STDOUT': True,
+ 'NEWSPIDER_MODULE': 'amazon.spiders',
+ 'SPIDER_MODULES': ['amazon.spiders']}
+2020-10-03 13:28:12 [scrapy.extensions.telnet] INFO: Telnet Password: b88b4829298c038a
+2020-10-03 13:28:12 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-10-03 13:28:12 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'random_useragent.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy_crawlera.CrawleraMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-10-03 13:28:12 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-10-03 13:28:12 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2020-10-03 13:28:12 [scrapy.core.engine] INFO: Spider opened
+2020-10-03 13:28:12 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-10-03 13:28:12 [root] INFO: Using crawlera at http://proxy.crawlera.com:8010 (apikey: 7cc8380)
+2020-10-03 13:28:12 [root] INFO: CrawleraMiddleware: disabling download delays on Scrapy side to optimize delays introduced by Crawlera. To avoid this behaviour you can use the CRAWLERA_PRESERVE_DELAY setting but keep in mind that this may slow down the crawl significantly
+2020-10-03 13:28:12 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-10-03 13:28:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.es/product-reviews/B078R7FC7G> (referer: None)
+2020-10-03 13:28:15 [product_reviews] INFO: User Agent : b"'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36'"
+2020-10-03 13:28:15 [product_reviews] INFO: Proxy ip address is b'23.236.210.34:3128'
+2020-10-03 13:28:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B078R7FC7G>
+{'comment': 'Llevamos varios meses con él y todavía no se ha caído, a pesar de '
+            'estar únicamente sujeto con adhesivo al azulejo del baño.El '
+            'cepillo eléctrico se sujeta genial y el soporte se limpia muy '
+            'fácilmente. Por fin tenemos el mueble del lavabo limpio y '
+            'despejadoLo recomiendo',
+ 'review_date': '2020-03-27 00:00:00',
+ 'review_title': 'Estable, muy buena adhesión y limpio',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:28:15.984606',
+ 'star_rating': '5,0'}
+2020-10-03 13:28:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B078R7FC7G>
+{'comment': 'De momento, aguanta pegado y lleva aprox. 2 meses.Lo único malo, '
+            'es que está siempre sucio, ya que el resto de agua que queda en '
+            'las boquillas y el propio cepillo gotean y siempre está con '
+            'manchas.',
+ 'review_date': '2019-12-14 00:00:00',
+ 'review_title': 'Buen invento, pero siempre sucio.',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:28:18.765095',
+ 'star_rating': '5,0'}
+2020-10-03 13:28:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B078R7FC7G>
+{'comment': 'Cumple muy bien su función. Los cepillosestan siempre en su '
+            'sitio, limpios y secos.',
+ 'review_date': '2019-08-29 00:00:00',
+ 'review_title': 'Muy práctico.',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:28:18.850866',
+ 'star_rating': '5,0'}
+2020-10-03 13:28:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B078R7FC7G>
+{'comment': 'La adhesión buenísima, queda perfecto y es súper práctico. '
+            'Recomendable 100%',
+ 'review_date': '2020-01-20 00:00:00',
+ 'review_title': 'Perfecto',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:28:18.936672',
+ 'star_rating': '5,0'}
+2020-10-03 13:28:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B078R7FC7G>
+{'comment': 'Perfecto para mantener en orden los cepillos electricos de '
+            'dientes con elegancia',
+ 'review_date': '2020-01-17 00:00:00',
+ 'review_title': 'Orden y elegancia',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:28:19.011438',
+ 'star_rating': '5,0'}
+2020-10-03 13:28:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B078R7FC7G>
+{'comment': 'Estéticamente es bonito, de momento aguanta perfectamente pegado '
+            'en la pared del baño',
+ 'review_date': '2020-05-12 00:00:00',
+ 'review_title': 'Bonito y adherente',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:28:19.092411',
+ 'star_rating': '5,0'}
+2020-10-03 13:28:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B078R7FC7G>
+{'comment': 'Tal cual se muestra',
+ 'review_date': '2020-03-29 00:00:00',
+ 'review_title': 'Tal cual',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:28:19.195997',
+ 'star_rating': '4,0'}
+2020-10-03 13:28:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B078R7FC7G>
+{'comment': 'Es lo más cómodo e higiénico para poner los cepillos, muy buena '
+            'solución. Lo recomiendo.',
+ 'review_date': '2020-07-17 00:00:00',
+ 'review_title': 'Cómodo e higienico',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:28:19.305690',
+ 'star_rating': '5,0'}
+2020-10-03 13:28:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B078R7FC7G>
+{'comment': 'Un año tiene y como el primer día, el adhesivo muy potente.',
+ 'review_date': '2020-04-25 00:00:00',
+ 'review_title': 'Perfecto',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:28:19.357550',
+ 'star_rating': '5,0'}
+2020-10-03 13:28:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B078R7FC7G>
+{'comment': 'Fácil de instalar y de limpiar. Acabado correcto. Satisfecho con '
+            'la compra, entregado en plazo.',
+ 'review_date': '2018-11-12 00:00:00',
+ 'review_title': 'Muy útil',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:28:19.401521',
+ 'star_rating': '5,0'}
+2020-10-03 13:28:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.es/OCTOPODIS-Sostenedor-electr%C3%B3nico-instalaci%C3%B3n-independiente/product-reviews/B078R7FC7G/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2> (referer: https://www.amazon.es/product-reviews/B078R7FC7G)
+2020-10-03 13:28:22 [product_reviews] INFO: User Agent : b"'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36'"
+2020-10-03 13:28:22 [product_reviews] INFO: Proxy ip address is b'23.236.227.75:3128'
+2020-10-03 13:28:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/OCTOPODIS-Sostenedor-electr%C3%B3nico-instalaci%C3%B3n-independiente/product-reviews/B078R7FC7G/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2>
+{'comment': 'Tal y como se muestra. Muy práctico.',
+ 'review_date': '2019-08-15 00:00:00',
+ 'review_title': 'Muy práctico y limpio.',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:28:22.744149',
+ 'star_rating': '5,0'}
+2020-10-03 13:28:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/OCTOPODIS-Sostenedor-electr%C3%B3nico-instalaci%C3%B3n-independiente/product-reviews/B078R7FC7G/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2>
+{'comment': 'Es muy útil y práctico.',
+ 'review_date': '2019-02-01 00:00:00',
+ 'review_title': 'Lo recomiendo',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:28:22.918679',
+ 'star_rating': '5,0'}
+2020-10-03 13:28:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/OCTOPODIS-Sostenedor-electr%C3%B3nico-instalaci%C3%B3n-independiente/product-reviews/B078R7FC7G/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2>
+{'comment': 'Perfecta',
+ 'review_date': '2019-12-14 00:00:00',
+ 'review_title': 'Muy bien',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:28:23.037394',
+ 'star_rating': '5,0'}
+2020-10-03 13:28:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/OCTOPODIS-Sostenedor-electr%C3%B3nico-instalaci%C3%B3n-independiente/product-reviews/B078R7FC7G/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2>
+{'comment': 'Muy practico . Lo tienes todo muy organizado',
+ 'review_date': '2018-11-12 00:00:00',
+ 'review_title': 'Octopus',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:28:23.219922',
+ 'star_rating': '5,0'}
+2020-10-03 13:28:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/OCTOPODIS-Sostenedor-electr%C3%B3nico-instalaci%C3%B3n-independiente/product-reviews/B078R7FC7G/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2>
+{'comment': 'todo perfecto',
+ 'review_date': '2019-10-08 00:00:00',
+ 'review_title': 'bien',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:28:23.386436',
+ 'star_rating': '5,0'}
+2020-10-03 13:28:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/OCTOPODIS-Sostenedor-electr%C3%B3nico-instalaci%C3%B3n-independiente/product-reviews/B078R7FC7G/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2>
+{'comment': 'todo perfecto!!',
+ 'review_date': '2019-07-24 00:00:00',
+ 'review_title': 'todo muy bien!!',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:28:23.468210',
+ 'star_rating': '5,0'}
+2020-10-03 13:28:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/OCTOPODIS-Sostenedor-electr%C3%B3nico-instalaci%C3%B3n-independiente/product-reviews/B078R7FC7G/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2>
+{'comment': '👍',
+ 'review_date': '2020-05-04 00:00:00',
+ 'review_title': 'queda muy recojido y limpio',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:28:23.530045',
+ 'star_rating': '5,0'}
+2020-10-03 13:28:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/OCTOPODIS-Sostenedor-electr%C3%B3nico-instalaci%C3%B3n-independiente/product-reviews/B078R7FC7G/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2>
+{'comment': 'Muy bien todo',
+ 'review_date': '2019-01-05 00:00:00',
+ 'review_title': 'Muy bien',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:28:23.587891',
+ 'star_rating': '5,0'}
+2020-10-03 13:28:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/OCTOPODIS-Sostenedor-electr%C3%B3nico-instalaci%C3%B3n-independiente/product-reviews/B078R7FC7G/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2>
+{'comment': 'De momento bien, muy cómodo y limpio espero que tenga buena '
+            'calidad la pegatina.Buscaba una base para los cepillos y que no '
+            'ocupará mucho espacio y fuera fácil de limpiarLo recomiendo',
+ 'review_date': '2020-06-07 00:00:00',
+ 'review_title': 'Elegante y comodidad',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:28:23.642203',
+ 'star_rating': '5,0'}
+2020-10-03 13:28:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/OCTOPODIS-Sostenedor-electr%C3%B3nico-instalaci%C3%B3n-independiente/product-reviews/B078R7FC7G/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2>
+{'comment': 'Justo lo que se muestra en la imagen',
+ 'review_date': '2020-05-08 00:00:00',
+ 'review_title': 'Soporte adecuado',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:28:23.714625',
+ 'star_rating': '4,0'}
+2020-10-03 13:28:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.es/OCTOPODIS-Sostenedor-electr%C3%B3nico-instalaci%C3%B3n-independiente/product-reviews/B078R7FC7G/ref=cm_cr_arp_d_paging_btm_3?ie=UTF8&pageNumber=3> (referer: https://www.amazon.es/OCTOPODIS-Sostenedor-electr%C3%B3nico-instalaci%C3%B3n-independiente/product-reviews/B078R7FC7G/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2)
+2020-10-03 13:28:26 [product_reviews] INFO: User Agent : b"'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0'"
+2020-10-03 13:28:26 [product_reviews] INFO: Proxy ip address is b'107.174.37.37:3128'
+2020-10-03 13:28:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/OCTOPODIS-Sostenedor-electr%C3%B3nico-instalaci%C3%B3n-independiente/product-reviews/B078R7FC7G/ref=cm_cr_arp_d_paging_btm_3?ie=UTF8&pageNumber=3>
+{'comment': 'es de un tamaño que se puede colocar en cualquier sitio, ademas '
+            'entran los recambios sin quitar el protector, muy bueno',
+ 'review_date': '2019-12-31 00:00:00',
+ 'review_title': 'tamaño perfectp',
+ 'review_votes': 'A 2 personas les ha parecido esto útil',
+ 'scraping_date': '2020-10-03 13:28:26.698083',
+ 'star_rating': '4,0'}
+2020-10-03 13:28:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.es/OCTOPODIS-Sostenedor-electr%C3%B3nico-instalaci%C3%B3n-independiente/product-reviews/B078R7FC7G/ref=cm_cr_arp_d_paging_btm_4?ie=UTF8&pageNumber=4> (referer: https://www.amazon.es/OCTOPODIS-Sostenedor-electr%C3%B3nico-instalaci%C3%B3n-independiente/product-reviews/B078R7FC7G/ref=cm_cr_arp_d_paging_btm_3?ie=UTF8&pageNumber=3)
+2020-10-03 13:28:29 [product_reviews] INFO: User Agent : b"'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36'"
+2020-10-03 13:28:29 [product_reviews] INFO: Proxy ip address is b'172.245.101.213:3128'
+2020-10-03 13:28:29 [product_reviews] WARNING:  Blocked no information on this page
+2020-10-03 13:28:29 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-10-03 13:28:29 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'crawlera/delay/reset_backoff': 4,
+ 'crawlera/request': 4,
+ 'crawlera/request/method/GET': 4,
+ 'crawlera/response': 4,
+ 'crawlera/response/status/200': 4,
+ 'downloader/request_bytes': 2283,
+ 'downloader/request_count': 4,
+ 'downloader/request_method_count/GET': 4,
+ 'downloader/response_bytes': 341402,
+ 'downloader/response_count': 4,
+ 'downloader/response_status_count/200': 4,
+ 'elapsed_time_seconds': 17.40566,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 10, 3, 12, 28, 29, 967684),
+ 'item_scraped_count': 21,
+ 'log_count/DEBUG': 25,
+ 'log_count/INFO': 20,
+ 'log_count/WARNING': 1,
+ 'request_depth_max': 3,
+ 'response_received_count': 4,
+ 'scheduler/dequeued': 4,
+ 'scheduler/dequeued/memory': 4,
+ 'scheduler/enqueued': 4,
+ 'scheduler/enqueued/memory': 4,
+ 'start_time': datetime.datetime(2020, 10, 3, 12, 28, 12, 562024)}
+2020-10-03 13:28:29 [scrapy.core.engine] INFO: Spider closed (finished)
+2020-10-03 13:28:29 [werkzeug] INFO: 127.0.0.1 - - [03/Oct/2020 13:28:29] "[37mGET /scrape HTTP/1.1[0m" 200 -
+2020-10-03 13:28:32 [werkzeug] INFO: 127.0.0.1 - - [03/Oct/2020 13:28:32] "[32mPOST / HTTP/1.1[0m" 302 -
+2020-10-03 13:28:34 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'amazon',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 32,
+ 'COOKIES_ENABLED': False,
+ 'DOWNLOAD_TIMEOUT': 600,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_ENCODING': 'UTF-8',
+ 'LOG_FILE': './scrapy_output.txt',
+ 'LOG_STDOUT': True,
+ 'NEWSPIDER_MODULE': 'amazon.spiders',
+ 'SPIDER_MODULES': ['amazon.spiders']}
+2020-10-03 13:28:34 [scrapy.extensions.telnet] INFO: Telnet Password: 1751904664063188
+2020-10-03 13:28:34 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-10-03 13:28:34 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'random_useragent.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy_crawlera.CrawleraMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-10-03 13:28:34 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-10-03 13:28:34 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2020-10-03 13:28:34 [scrapy.core.engine] INFO: Spider opened
+2020-10-03 13:28:34 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-10-03 13:28:34 [root] INFO: Using crawlera at http://proxy.crawlera.com:8010 (apikey: 7cc8380)
+2020-10-03 13:28:34 [root] INFO: CrawleraMiddleware: disabling download delays on Scrapy side to optimize delays introduced by Crawlera. To avoid this behaviour you can use the CRAWLERA_PRESERVE_DELAY setting but keep in mind that this may slow down the crawl significantly
+2020-10-03 13:28:34 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-10-03 13:28:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.es/product-reviews/B07XDJKGBQ> (referer: None)
+2020-10-03 13:28:39 [product_reviews] INFO: User Agent : b"'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36'"
+2020-10-03 13:28:39 [product_reviews] INFO: Proxy ip address is b'23.250.93.182:3128'
+2020-10-03 13:28:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B07XDJKGBQ>
+{'comment': 'Cogí este artículo ya que pensaba que me iba a ayudar a la hora '
+            'de tener organizado el cajón del secador y demás aparatos para el '
+            'pelo. Pero no me sirve, queda muy alto y no cierra el cajón. Este '
+            'organizador está pensado para tenerlo sobre la repisa del lavabo '
+            'o en alguna zona en la que quieras tener acceso fácil y rápido a '
+            'estos aparatos, si les das mucho uso. En casa la verdad es que lo '
+            'que más usamos es el secador, el resto de vez en cuando. Por lo '
+            'que tener este organizador a la vista, me quita espacio y no me '
+            'sirve.Sin embargo el tapete de silicona si lo veo muy práctico, '
+            'ya que siempre que se va a usar la plancha vas con miedo a ver '
+            'dónde la dejas porque está caliente y puedes quemar la superficie '
+            'o porque dicha superficie está algo mojada y es peligroso. '
+            'Colocando el tapete encima se acaba el problema. Es blandito y se '
+            'rula y no ocupa casi espacio para guardarlo.',
+ 'review_date': '2020-07-06 00:00:00',
+ 'review_title': 'Útil según se mire',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:28:39.738658',
+ 'star_rating': '4,0'}
+2020-10-03 13:28:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B07XDJKGBQ>
+{'comment': 'No tenía claro que encajara todo bien, pero me ha '
+            'sorprendido.Queda todo bastante bien, y resulta cómodo.Su cuerpo '
+            'es metálico de color negro y cada espacio tiene una parte de '
+            'plástico donde entra en contacto con el accesorio. Es resistente '
+            'a altas temperaturas.Mucho mejor de lo que pensaba muy contenta '
+            'con el resultado.Me parece ideal para no tener todo por ahí hasta '
+            'que se enfría.Muy recomendable para poner un poco de orden.',
+ 'review_date': '2020-07-04 00:00:00',
+ 'review_title': 'Si tienes muchos accesorios o trabajas en peluquería me '
+                 'parece muy necesario.',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:28:39.841439',
+ 'star_rating': '5,0'}
+2020-10-03 13:28:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B07XDJKGBQ>
+{'comment': 'Mucho mejor en persona de lo que esperaba, el soporte u '
+            'organizador es metálico, se ve muy resistente y el cubículo para '
+            'cada accesorio de peinado es de plástico, como indica resistente '
+            'a altas temperaturas.Es una forma de tener todo a mano bien '
+            'colocado, lo único es que no se muy bien como colocar los cables '
+            'que visualmente quede bien, si dejarlos colgando, o doblarlos y '
+            'con una gomitas dejarlos a un lado...',
+ 'review_date': '2020-06-30 00:00:00',
+ 'review_title': 'Organizador de sobremesa',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:28:39.904210',
+ 'star_rating': '4,0'}
+2020-10-03 13:28:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B07XDJKGBQ>
+{'comment': 'Buen tamaño (largo 25 cm y ancho 17 cm) y práctico para tenerlo '
+            'todo a mano en un sitio.',
+ 'review_date': '2020-07-28 00:00:00',
+ 'review_title': 'ÚTIL y práctico',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:28:39.968195',
+ 'star_rating': '4,0'}
+2020-10-03 13:28:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.es/OCTOPODIS-Organizador-Accesorios-Secadora-Alisador/product-reviews/B07XDJKGBQ/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2> (referer: https://www.amazon.es/product-reviews/B07XDJKGBQ)
+2020-10-03 13:28:43 [product_reviews] INFO: User Agent : b"'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'"
+2020-10-03 13:28:43 [product_reviews] INFO: Proxy ip address is b'23.250.37.68:3128'
+2020-10-03 13:28:43 [product_reviews] WARNING:  Blocked no information on this page
+2020-10-03 13:28:43 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-10-03 13:28:43 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'crawlera/delay/reset_backoff': 2,
+ 'crawlera/request': 2,
+ 'crawlera/request/method/GET': 2,
+ 'crawlera/response': 2,
+ 'crawlera/response/status/200': 2,
+ 'downloader/request_bytes': 944,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 175220,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 8.784184,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 10, 3, 12, 28, 43, 288578),
+ 'item_scraped_count': 4,
+ 'log_count/DEBUG': 6,
+ 'log_count/INFO': 16,
+ 'log_count/WARNING': 1,
+ 'request_depth_max': 1,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2020, 10, 3, 12, 28, 34, 504394)}
+2020-10-03 13:28:43 [scrapy.core.engine] INFO: Spider closed (finished)
+2020-10-03 13:28:43 [werkzeug] INFO: 127.0.0.1 - - [03/Oct/2020 13:28:43] "[37mGET /scrape HTTP/1.1[0m" 200 -
+2020-10-03 13:28:45 [werkzeug] INFO: 127.0.0.1 - - [03/Oct/2020 13:28:45] "[32mPOST / HTTP/1.1[0m" 302 -
+2020-10-03 13:28:47 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'amazon',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 32,
+ 'COOKIES_ENABLED': False,
+ 'DOWNLOAD_TIMEOUT': 600,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_ENCODING': 'UTF-8',
+ 'LOG_FILE': './scrapy_output.txt',
+ 'LOG_STDOUT': True,
+ 'NEWSPIDER_MODULE': 'amazon.spiders',
+ 'SPIDER_MODULES': ['amazon.spiders']}
+2020-10-03 13:28:47 [scrapy.extensions.telnet] INFO: Telnet Password: 2c5d8584a7a9b95d
+2020-10-03 13:28:47 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-10-03 13:28:47 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'random_useragent.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy_crawlera.CrawleraMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-10-03 13:28:47 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-10-03 13:28:47 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2020-10-03 13:28:47 [scrapy.core.engine] INFO: Spider opened
+2020-10-03 13:28:47 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-10-03 13:28:47 [root] INFO: Using crawlera at http://proxy.crawlera.com:8010 (apikey: 7cc8380)
+2020-10-03 13:28:47 [root] INFO: CrawleraMiddleware: disabling download delays on Scrapy side to optimize delays introduced by Crawlera. To avoid this behaviour you can use the CRAWLERA_PRESERVE_DELAY setting but keep in mind that this may slow down the crawl significantly
+2020-10-03 13:28:47 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-10-03 13:28:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.es/product-reviews/B01N47IJ9B> (referer: None)
+2020-10-03 13:28:50 [product_reviews] INFO: User Agent : b"'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0'"
+2020-10-03 13:28:50 [product_reviews] INFO: Proxy ip address is b'196.16.233.156:3128'
+2020-10-03 13:28:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B01N47IJ9B>
+{'comment': 'Las fotos del producto no muestran su verdadero tamaño. Es muy '
+            'grande y lo que menos me ha gustado es que el cabezal del cepillo '
+            'eléctrico toca el soporte, practicamente lo unico que lo sostiene '
+            'son las cerdas del cepillo. No me gusta, allí se acumula humedad, '
+            'y bacterias que luego llevas a la boca.Procedo a la devolución.',
+ 'review_date': '2018-02-06 00:00:00',
+ 'review_title': 'Muy Grande',
+ 'review_votes': 'A 2 personas les ha parecido esto útil',
+ 'scraping_date': '2020-10-03 13:28:50.908240',
+ 'star_rating': '2,0'}
+2020-10-03 13:28:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B01N47IJ9B>
+{'comment': 'Lo he comprado para poner cepillos eléctricos completos, el '
+            'cabezal con la base y aguanta perfectamente, lo tengo con 3 '
+            'eléctricos más uno manual y sin problema, la ventosa es de buena '
+            'calidad y el diseño es bonito. Muy contenta con la compra.',
+ 'review_date': '2019-01-28 00:00:00',
+ 'review_title': 'Práctico y bonito',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:28:50.996019',
+ 'star_rating': '5,0'}
+2020-10-03 13:28:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B01N47IJ9B>
+{'comment': 'Ha quedado muy bien sujeto a la pared y los cepillos encajan '
+            'perfectamente. Mis azulejos son lisos pero no son brillantes, '
+            'hacen aguas y aún así se adherió perfectamente la ventosa. De '
+            'momento lleva 2 días puesto y no tiene pinta de caerse. Lo '
+            'recomiendo un montón, es muy práctico.',
+ 'review_date': '2018-07-29 00:00:00',
+ 'review_title': 'Sujeción y practicidad perfectas',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:28:51.083783',
+ 'star_rating': '5,0'}
+2020-10-03 13:28:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B01N47IJ9B>
+{'comment': 'No sé que cepillo sale en la foto pero es engañosa. porque sale '
+            'solo el cabezal, no hay manera de colgar el cepillo entero sin '
+            'desmontar el cabezal cada vez.Yo no encuentro esto practico. me '
+            'toca retocar la apertura del hueco de entrada, para colgar el '
+            'cepillo sin desmontarlo.Por lo demas la succión va muy bien.',
+ 'review_date': '2018-01-12 00:00:00',
+ 'review_title': 'No adaptado a cepillos electricos ORAL B',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:28:51.184662',
+ 'star_rating': '3,0'}
+2020-10-03 13:28:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B01N47IJ9B>
+{'comment': 'Me ha encantado. Se ve de muy buena calidad en el material. Tanto '
+            'que he pedido otro para el otro baño.La forma de fijarse a la '
+            'pared comodisima. Una ventosa muy fuerte.',
+ 'review_date': '2018-11-14 00:00:00',
+ 'review_title': 'Muy práctico',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:28:51.272283',
+ 'star_rating': '5,0'}
+2020-10-03 13:28:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B01N47IJ9B>
+{'comment': 'Práctico y sencillo a la vez que eficiente. La ventosa es '
+            'efectiva, se colocó ya hace casi dos semanas y no tiene pinta de '
+            'soltarse.Lo recomiendo.',
+ 'review_date': '2017-08-17 00:00:00',
+ 'review_title': 'Luis',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:28:51.363037',
+ 'star_rating': '5,0'}
+2020-10-03 13:28:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B01N47IJ9B>
+{'comment': 'La ventosa es increiblemente potente incluso en azulejos con '
+            'cierto grado de relieve. Sin embargo los orificios son grandes y '
+            'el cepillo se cae si no tienes cuidado.',
+ 'review_date': '2017-08-20 00:00:00',
+ 'review_title': 'Ventosa muy buena pero orificios grandes',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:28:51.463756',
+ 'star_rating': '3,0'}
+2020-10-03 13:28:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B01N47IJ9B>
+{'comment': 'No es el producto perfecto, pero, para lo que vale, hace su '
+            'función. Eso sí, se despega de vez en cuando....',
+ 'review_date': '2020-05-23 00:00:00',
+ 'review_title': 'Para lo que vale',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:28:51.563492',
+ 'star_rating': '4,0'}
+2020-10-03 13:28:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B01N47IJ9B>
+{'comment': 'Se agarra muy bien a plaqueta, se limpia genial.',
+ 'review_date': '2018-11-29 00:00:00',
+ 'review_title': 'Recomendable',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:28:51.648264',
+ 'star_rating': '5,0'}
+2020-10-03 13:28:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B01N47IJ9B>
+{'comment': 'Producto de calidad, cumple perfectamente! Recomiendo!',
+ 'review_date': '2020-09-11 00:00:00',
+ 'review_title': 'Muy bueno!',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:28:51.736024',
+ 'star_rating': '5,0'}
+2020-10-03 13:28:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.es/OCTOPODIS-inoxidable-Afeitadora-Cabezales-El%C3%A9ctricos/product-reviews/B01N47IJ9B/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2> (referer: https://www.amazon.es/product-reviews/B01N47IJ9B)
+2020-10-03 13:28:54 [product_reviews] INFO: User Agent : b"'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36'"
+2020-10-03 13:28:54 [product_reviews] INFO: Proxy ip address is b'107.173.44.32:3128'
+2020-10-03 13:28:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/OCTOPODIS-inoxidable-Afeitadora-Cabezales-El%C3%A9ctricos/product-reviews/B01N47IJ9B/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2>
+{'comment': 'Se cae constantemente y sin tener nada puesto encima',
+ 'review_date': '2020-02-16 00:00:00',
+ 'review_title': 'No válido',
+ 'review_votes': 'A una persona le ha parecido esto útil',
+ 'scraping_date': '2020-10-03 13:28:54.680293',
+ 'star_rating': '1,0'}
+2020-10-03 13:28:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/OCTOPODIS-inoxidable-Afeitadora-Cabezales-El%C3%A9ctricos/product-reviews/B01N47IJ9B/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2>
+{'comment': 'ok',
+ 'review_date': '2018-12-08 00:00:00',
+ 'review_title': 'ok',
+ 'review_votes': 'A una persona le ha parecido esto útil',
+ 'scraping_date': '2020-10-03 13:28:54.827637',
+ 'star_rating': '5,0'}
+2020-10-03 13:28:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/OCTOPODIS-inoxidable-Afeitadora-Cabezales-El%C3%A9ctricos/product-reviews/B01N47IJ9B/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2>
+{'comment': 'Lo compré para no tener los cepillos sobre el lavabo o en un vaso '
+            '(que suele acumular agua, moho, etc) y la verdad es que funciona '
+            'muy bien. No le pongo las 5 estrellas porque está un poco '
+            'doblado...',
+ 'review_date': '2017-11-28 00:00:00',
+ 'review_title': 'Muy útil',
+ 'review_votes': 'A una persona le ha parecido esto útil',
+ 'scraping_date': '2020-10-03 13:28:54.967312',
+ 'star_rating': '4,0'}
+2020-10-03 13:28:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/OCTOPODIS-inoxidable-Afeitadora-Cabezales-El%C3%A9ctricos/product-reviews/B01N47IJ9B/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2>
+{'comment': 'Sujeta perfectamente el cepillo con la base e incluso la máquina '
+            'de afeitar. Ideal para cuando hay poco espacio. Mucha adherencia',
+ 'review_date': '2018-09-17 00:00:00',
+ 'review_title': 'Soporta mucho peso, ideal para poco espacio',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:28:55.081990',
+ 'star_rating': '5,0'}
+2020-10-03 13:28:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.es/OCTOPODIS-inoxidable-Afeitadora-Cabezales-El%C3%A9ctricos/product-reviews/B01N47IJ9B/ref=cm_cr_arp_d_paging_btm_3?ie=UTF8&pageNumber=3> (referer: https://www.amazon.es/OCTOPODIS-inoxidable-Afeitadora-Cabezales-El%C3%A9ctricos/product-reviews/B01N47IJ9B/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2)
+2020-10-03 13:28:58 [product_reviews] INFO: User Agent : b"'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0'"
+2020-10-03 13:28:58 [product_reviews] INFO: Proxy ip address is b'198.245.67.168:3128'
+2020-10-03 13:28:58 [product_reviews] WARNING:  Blocked no information on this page
+2020-10-03 13:28:58 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-10-03 13:28:58 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'crawlera/delay/reset_backoff': 3,
+ 'crawlera/request': 3,
+ 'crawlera/request/method/GET': 3,
+ 'crawlera/response': 3,
+ 'crawlera/response/status/200': 3,
+ 'downloader/request_bytes': 1538,
+ 'downloader/request_count': 3,
+ 'downloader/request_method_count/GET': 3,
+ 'downloader/response_bytes': 257126,
+ 'downloader/response_count': 3,
+ 'downloader/response_status_count/200': 3,
+ 'elapsed_time_seconds': 10.843654,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 10, 3, 12, 28, 58, 566346),
+ 'item_scraped_count': 14,
+ 'log_count/DEBUG': 17,
+ 'log_count/INFO': 18,
+ 'log_count/WARNING': 1,
+ 'request_depth_max': 2,
+ 'response_received_count': 3,
+ 'scheduler/dequeued': 3,
+ 'scheduler/dequeued/memory': 3,
+ 'scheduler/enqueued': 3,
+ 'scheduler/enqueued/memory': 3,
+ 'start_time': datetime.datetime(2020, 10, 3, 12, 28, 47, 722692)}
+2020-10-03 13:28:58 [scrapy.core.engine] INFO: Spider closed (finished)
+2020-10-03 13:28:58 [werkzeug] INFO: 127.0.0.1 - - [03/Oct/2020 13:28:58] "[37mGET /scrape HTTP/1.1[0m" 200 -
+2020-10-03 13:29:01 [werkzeug] INFO: 127.0.0.1 - - [03/Oct/2020 13:29:01] "[32mPOST / HTTP/1.1[0m" 302 -
+2020-10-03 13:29:03 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'amazon',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 32,
+ 'COOKIES_ENABLED': False,
+ 'DOWNLOAD_TIMEOUT': 600,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_ENCODING': 'UTF-8',
+ 'LOG_FILE': './scrapy_output.txt',
+ 'LOG_STDOUT': True,
+ 'NEWSPIDER_MODULE': 'amazon.spiders',
+ 'SPIDER_MODULES': ['amazon.spiders']}
+2020-10-03 13:29:03 [scrapy.extensions.telnet] INFO: Telnet Password: 87d6c278f4e0efaf
+2020-10-03 13:29:03 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-10-03 13:29:03 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'random_useragent.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy_crawlera.CrawleraMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-10-03 13:29:03 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-10-03 13:29:03 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2020-10-03 13:29:03 [scrapy.core.engine] INFO: Spider opened
+2020-10-03 13:29:03 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-10-03 13:29:03 [root] INFO: Using crawlera at http://proxy.crawlera.com:8010 (apikey: 7cc8380)
+2020-10-03 13:29:03 [root] INFO: CrawleraMiddleware: disabling download delays on Scrapy side to optimize delays introduced by Crawlera. To avoid this behaviour you can use the CRAWLERA_PRESERVE_DELAY setting but keep in mind that this may slow down the crawl significantly
+2020-10-03 13:29:03 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-10-03 13:29:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.es/product-reviews/B073GQGSNY> (referer: None)
+2020-10-03 13:29:06 [product_reviews] INFO: User Agent : b"'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.91 Safari/537.36'"
+2020-10-03 13:29:06 [product_reviews] INFO: Proxy ip address is b'192.3.146.3:3128'
+2020-10-03 13:29:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B073GQGSNY>
+{'comment': 'Portacabezales para cuatro unidades (adaptador cepillos '
+            'eléctricos) en acero inoxidable.Me ha gustado su consistencia, ha '
+            'sido utilizado con los Oral B y entran de manera perfecta.Para '
+            'introducirlos o sacarlos hay que hacerlo a través a la zona más '
+            'próxima al cabezal, a través del grosor de las piezas de recambio '
+            'que van de menos a más ya quedan colgando. Fácil de limpiar y '
+            'estéticamente no es para nada feo, pero para gustos colores...Se '
+            'puede adherir a la pared pues en la parte posterior lleva '
+            'adhesivo, pero yo no he tenido necesidad, pues el equilibrio lo '
+            'guarda muy bien y en la parte baja incluso lleva cuatro topes '
+            'antideslizantes de apoyo.Un producto que guarda un equilibrio '
+            'perfecto con mi forma de pensar, pues aunque a nadie le pudiera '
+            'gustar ya sería suficiente con que me gustase a mi, pues si fuese '
+            'al revés indicaría que el producto no me hubiera servido para '
+            'cubrir mis expectativas.Por supuesto que como todo también se '
+            'podría mejorar, pero como sólo hay cinco estrellas por eso le doy '
+            'la máxima puntuación....Bromas aparte, un artículo muy '
+            'equilibrado con la utilidad, la estética y el precio , tratando '
+            'de conjugar a la perfección el ahorro en el espacio y en el '
+            'bolsillo.',
+ 'review_date': '2019-10-11 00:00:00',
+ 'review_title': 'La estética sin un alma útil no sirve para nada',
+ 'review_votes': 'A una persona le ha parecido esto útil',
+ 'scraping_date': '2020-10-03 13:29:06.938512',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B073GQGSNY>
+{'comment': 'Lo tenemos pegado en el espejo del baño y funciona.Los cabezales '
+            'quedan bien sujetos y la bandeja inferior evita el goteo sobre lo '
+            'que haya debajo.No lo recomiendo para apoyarlo sobre su base, es '
+            'poco estable y pesa poco por lo que te pasaras todo el tiempo '
+            'colocandolo; los cabezales encajan fuerte y al cogerlos acabaras '
+            'tirándolo.Comentario personal: Estaría mejor si su '
+            'diseño/estética estuviera mas orientado a estar en pared.',
+ 'review_date': '2018-09-22 00:00:00',
+ 'review_title': 'Poco estable en suelo, ideal pared.',
+ 'review_votes': 'A 2 personas les ha parecido esto útil',
+ 'scraping_date': '2020-10-03 13:29:06.993430',
+ 'star_rating': '4,0'}
+2020-10-03 13:29:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B073GQGSNY>
+{'comment': 'Muy cómodo.Perfecto para los cepillos de Oral B.Hay que '
+            'colocarlos antes de poner la funda protectora. Esta se coloca una '
+            'vez que está ya colgado el cepillo.Limpio e higiénico.Primero los '
+            'tenía rodando por el cajón. Ahora quedan a mano sin tener que '
+            'revolver para encontrarlos.Lo mismo ocurre con el soporte de '
+            'maquina cuchillas de afeitar.Y las bandejas laterales de '
+            'almacenaje.Perfecto.',
+ 'review_date': '2020-09-09 00:00:00',
+ 'review_title': 'Soporte cepillos de Oral B',
+ 'review_votes': 'A una persona le ha parecido esto útil',
+ 'scraping_date': '2020-10-03 13:29:07.054204',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B073GQGSNY>
+{'comment': 'llevo años sin saber que hacer con los cabezales de los cepillos '
+            'y esta es la solución perfecta, pega muy bien, queda muy bonito y '
+            'los cepillos en perfecto estado',
+ 'review_date': '2019-07-12 00:00:00',
+ 'review_title': 'LA SOLUCION',
+ 'review_votes': 'A una persona le ha parecido esto útil',
+ 'scraping_date': '2020-10-03 13:29:07.112288',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B073GQGSNY>
+{'comment': 'Y la verdad es que queda muy recogido en el baño para los '
+            'cabezales de los cepillos de dientes.Me gusta el material...que, '
+            'aunque sencillo, parece que aguanta bien el ajetreo de los '
+            'cepillos.El único dilema que tenemos es si poner los cabezales '
+            'como en la imagen (boca abajo) o hacia arriba :-)',
+ 'review_date': '2018-06-18 00:00:00',
+ 'review_title': 'Hemos comprado dos...',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:07.162952',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B073GQGSNY>
+{'comment': 'Muy buen producto.Los recambios encajan perfectamente, no se '
+            'tocan entre ellos.De acero inoxidable, y pesado, no hace falta '
+            'usar el pegamentoEs muy estable.Tras leer los comentarios '
+            'positivos, me decidí a comprarlo y no me arrepiento en '
+            'absoluto.Caben 4 recambios, y apenas ocupa espacio.Estéticamente '
+            'encaja en cualquier baño.Muy bonito .',
+ 'review_date': '2018-04-06 00:00:00',
+ 'review_title': 'Perfecto!!! Ha superado mis espectadoras',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:07.212813',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B073GQGSNY>
+{'comment': 'Es resistente y muy bonito, opté por pegarlo con su adhesivo a la '
+            'pared porque la base del lavabo es pequeña y está llena de otros '
+            'objetos de baño, de momento va bien, no sé si con el tiempo se '
+            'despegará. Mis hijos están contento con él y lo ven práctico.',
+ 'review_date': '2018-03-15 00:00:00',
+ 'review_title': 'ASIN: B073GQGSNY',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:07.256794',
+ 'star_rating': '4,0'}
+2020-10-03 13:29:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B073GQGSNY>
+{'comment': 'Es muy bonito y práctico, caben 4 cabezales y aunque lleva un '
+            'adhesivo para pegar el la pared, de momento lo hemos puesto sobre '
+            'el lavabo porque tiene una buena base y se mantiene bien.Pone que '
+            'es acero inoxidable por lo que espero que con el tiempo se '
+            'mantenga igual.',
+ 'review_date': '2018-09-14 00:00:00',
+ 'review_title': 'Muy práctico y bonito',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:07.306567',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B073GQGSNY>
+{'comment': 'El producto cumple perfectamente con lo especificado, el material '
+            'es más resistente de lo que me imaginaba y aunque lo estoy usando '
+            'para otro tipo de cabezales, pero sirve correctamente, Estoy muy '
+            'contento con la compra.',
+ 'review_date': '2018-09-01 00:00:00',
+ 'review_title': 'Sencillo pero cumple con lo prometido.',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:07.381329',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B073GQGSNY>
+{'comment': 'Pues si, me sorprendió......para mi parecer la foto no hace '
+            'justicia, además de la calidad el peso, lo queria para colocarlo '
+            'en la encimera del baño y pensé que sería poco estable, pero para '
+            'nada.....',
+ 'review_date': '2018-03-03 00:00:00',
+ 'review_title': 'Gratamente sorprendida....',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:07.447246',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2> (referer: https://www.amazon.es/product-reviews/B073GQGSNY)
+2020-10-03 13:29:10 [product_reviews] INFO: User Agent : b"'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36'"
+2020-10-03 13:29:10 [product_reviews] INFO: Proxy ip address is b'192.161.160.248:8800'
+2020-10-03 13:29:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2>
+{'comment': 'Cumple con lo que esperaba, no lo he pegado de momento no ha '
+            'hecho falta, sobre la encimera tiene buena estabilibdad.La unica '
+            'pega es que me parace un poco caro, por lo demas genial, '
+            'recomendable 100%.',
+ 'review_date': '2019-12-23 00:00:00',
+ 'review_title': 'Recomendabel, pero caro',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:10.537058',
+ 'star_rating': '4,0'}
+2020-10-03 13:29:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2>
+{'comment': 'Estéticamente es muy bonito, se sostiene bien sin pegarlo a la '
+            'pared, aunque hay la opción de pegarlo. Opción muy higiénica y de '
+            'orden para los cabezales. Tengo los dos tipos de cepillo de '
+            'OralB, el redondo y el alargado y los dos se acoplan perfecto.',
+ 'review_date': '2017-10-11 00:00:00',
+ 'review_title': 'Muy bonito y además práctico',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:10.642778',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2>
+{'comment': 'Es lo que estaba buscando, pequeño y estable queda perfecto '
+            'dentro del armario del baño.',
+ 'review_date': '2019-12-05 00:00:00',
+ 'review_title': 'Perfecto',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:10.728547',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2>
+{'comment': 'Buen producto, mas bonito que en las fotos, se sostiene bastante '
+            'bien ya que es pesado, no se vuelca ni se cae',
+ 'review_date': '2018-09-06 00:00:00',
+ 'review_title': 'Cumple las expectativas de mi compra',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:10.793374',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2>
+{'comment': 'Una vez en la mano el aspecto es bastante mejor incluso que la '
+            'foto, es de buen material y tiene un peso que nos permite no '
+            'pegarlo a la pared',
+ 'review_date': '2018-08-17 00:00:00',
+ 'review_title': 'Buena calidad y acabados',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:10.902084',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2>
+{'comment': 'Pesa poco, se adhiere bien a la pared y es muy limpio. Estoy muy '
+            'contento de comprarlo..... me gusta mucho',
+ 'review_date': '2018-02-25 00:00:00',
+ 'review_title': 'Perfecto.',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:11.060659',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2>
+{'comment': 'Genial para guardar ordenadamente mis cabezales. Se aguanta sin '
+            'tener q enganchar a pared. Es brillante y me hace juego con el '
+            'resto de utensilios q tenia en el lavabo.',
+ 'review_date': '2018-09-20 00:00:00',
+ 'review_title': 'Diseño bonito y elegante',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:11.174390',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2>
+{'comment': 'El soporte funciona muy bien, y permite poner los cabezales tanto '
+            'bocarriba como bocabajo. Yo lo uso sin usar el adhesivo, el '
+            'soporte tiene peso y no hace falta pegarlo',
+ 'review_date': '2018-07-05 00:00:00',
+ 'review_title': 'Muy práctico',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:11.259129',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2>
+{'comment': 'Es muy práctico, viene muy bien para poner en la pared y es '
+            'bonito.',
+ 'review_date': '2019-10-12 00:00:00',
+ 'review_title': 'Muy Práctico',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:11.319000',
+ 'star_rating': '4,0'}
+2020-10-03 13:29:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2>
+{'comment': 'Muy practico',
+ 'review_date': '2019-09-16 00:00:00',
+ 'review_title': 'Diseño',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:11.370861',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_3?ie=UTF8&pageNumber=3> (referer: https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2)
+2020-10-03 13:29:14 [product_reviews] INFO: User Agent : b"'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'"
+2020-10-03 13:29:14 [product_reviews] INFO: Proxy ip address is b'107.173.202.169:3128'
+2020-10-03 13:29:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_3?ie=UTF8&pageNumber=3>
+{'comment': 'Me ha encantado, es perfecto para tener los cabezales del cepillo '
+            'eléctrico',
+ 'review_date': '2019-01-26 00:00:00',
+ 'review_title': 'Perfecto',
+ 'review_votes': 'A una persona le ha parecido esto útil',
+ 'scraping_date': '2020-10-03 13:29:14.302917',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_3?ie=UTF8&pageNumber=3>
+{'comment': 'Muy práctico y cómodo para cabezales de cepillos eléctricos de '
+            'oral-b. Se pega muy fuerte y fácilmente en la pared',
+ 'review_date': '2018-02-23 00:00:00',
+ 'review_title': 'Ainhoa Bilbao',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:14.453522',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_3?ie=UTF8&pageNumber=3>
+{'comment': 'Cumple las expectativas que esperaba',
+ 'review_date': '2019-06-29 00:00:00',
+ 'review_title': 'Resistente e inoxidable',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:14.596097',
+ 'star_rating': '4,0'}
+2020-10-03 13:29:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_3?ie=UTF8&pageNumber=3>
+{'comment': 'Producto muy bonito e higiénico. Envío rápido. Igual que en la '
+            'foto. Buena calidad. Lleva una pegatina por si lo queréis poner '
+            'en la pared.',
+ 'review_date': '2018-02-23 00:00:00',
+ 'review_title': 'Isabel',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:14.653981',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_3?ie=UTF8&pageNumber=3>
+{'comment': 'Me parece un muy buen articulo, cumple su cometido perfectamente, '
+            'es facil de pegar, resistente y los cabezales del cepillo quedan '
+            'bien sujetos a los enganches',
+ 'review_date': '2018-03-03 00:00:00',
+ 'review_title': 'Genial',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:14.697948',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_3?ie=UTF8&pageNumber=3>
+{'comment': 'Me encanta el artículo. No le doy cinco estrellas en general '
+            'porque habría querido que fuese solo para dos cabezales en vez de '
+            'cuatro. De serlo, se las habría dado.',
+ 'review_date': '2018-11-21 00:00:00',
+ 'review_title': 'Elegante y práctico, pero añadan una opción para solo dos '
+                 'cabezales.',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:14.753716',
+ 'star_rating': '4,0'}
+2020-10-03 13:29:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_3?ie=UTF8&pageNumber=3>
+{'comment': 'Hace su función y es muy bonito. Queda muy chulo y ya no se caen '
+            'los cepillos. Estupendo.',
+ 'review_date': '2018-09-30 00:00:00',
+ 'review_title': 'Buena compra',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:14.813549',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_3?ie=UTF8&pageNumber=3>
+{'comment': 'te llevas lo que se ve en la foto del producto ni mas ni menos',
+ 'review_date': '2019-02-18 00:00:00',
+ 'review_title': 'es lo que es',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:14.886448',
+ 'star_rating': '4,0'}
+2020-10-03 13:29:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_3?ie=UTF8&pageNumber=3>
+{'comment': 'El productos es genial es como yo esperaba y lo mas importante '
+            'para mi es muy limpio y se aguanta muy bien sin pegar',
+ 'review_date': '2018-02-12 00:00:00',
+ 'review_title': 'muy util',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:14.944311',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_3?ie=UTF8&pageNumber=3>
+{'comment': 'El material es de calidad, me ha gustado mucho, pega muy bien en '
+            'cualquier superficie lisa',
+ 'review_date': '2020-05-15 00:00:00',
+ 'review_title': 'Bonito y funcional',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:14.990155',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_4?ie=UTF8&pageNumber=4> (referer: https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_3?ie=UTF8&pageNumber=3)
+2020-10-03 13:29:18 [product_reviews] INFO: User Agent : b"'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.91 Safari/537.36'"
+2020-10-03 13:29:18 [product_reviews] INFO: Proxy ip address is b'104.227.203.23:3128'
+2020-10-03 13:29:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_4?ie=UTF8&pageNumber=4>
+{'comment': 'Muy bien, permite poner los cabezales hacia arriba evitando el '
+            'acumuló de humedad y moho.',
+ 'review_date': '2019-11-21 00:00:00',
+ 'review_title': 'Muy práctico e higiénico',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:18.391795',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_4?ie=UTF8&pageNumber=4>
+{'comment': 'Es perfecto para cuatro cabezales de oral-b. Además lleva para '
+            'poder engancharlo en la pared. y llegó dentro del plazo que nos '
+            'dieron',
+ 'review_date': '2018-03-14 00:00:00',
+ 'review_title': 'Todo estupendo',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:18.499426',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_4?ie=UTF8&pageNumber=4>
+{'comment': 'Es cómodo y pesa muy poco para poder pegarlo en la pared, y muy '
+            'fácil de limpiar con brillo, lo recomiendo',
+ 'review_date': '2018-02-26 00:00:00',
+ 'review_title': 'Pilar',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:18.583201',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_4?ie=UTF8&pageNumber=4>
+{'comment': 'Me encanta. Se puede pegar en la pared o usarlo apoyado en su '
+            'pie. Sencillo y elegante',
+ 'review_date': '2018-10-09 00:00:00',
+ 'review_title': 'Sencillo y elegante',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:18.654012',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_4?ie=UTF8&pageNumber=4>
+{'comment': 'Fácil de poner y limpiarMuy útil para evitar que tus cepillos '
+            'anden sueltos sin ningún control',
+ 'review_date': '2018-12-10 00:00:00',
+ 'review_title': 'Gran utilidad',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:18.738787',
+ 'star_rating': '4,0'}
+2020-10-03 13:29:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_4?ie=UTF8&pageNumber=4>
+{'comment': 'no encaja a la perfección los cabezales depende de la marca, pero '
+            'hacen su función y se pueden colgar en cualquier azulejo',
+ 'review_date': '2017-09-05 00:00:00',
+ 'review_title': 'deberían haber diferentes granduras de agujeros',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:18.825554',
+ 'star_rating': '4,0'}
+2020-10-03 13:29:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_4?ie=UTF8&pageNumber=4>
+{'comment': 'Es de alta calidad. Útil que se sopprte por sí mismo o que se '
+            'pueda enganchar a la pared también.',
+ 'review_date': '2018-10-13 00:00:00',
+ 'review_title': 'Calidad',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:18.891413',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_4?ie=UTF8&pageNumber=4>
+{'comment': 'Buen acabado y funcionalidad perfecta del producto. Cumple '
+            'totalmente con lo que se busca con este producto : orden y '
+            'limpieza.',
+ 'review_date': '2017-09-07 00:00:00',
+ 'review_title': 'Edu.',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:18.943271',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_4?ie=UTF8&pageNumber=4>
+{'comment': 'Lo dicho anteriormente.Todo perfecto.',
+ 'review_date': '2019-08-12 00:00:00',
+ 'review_title': 'La rapidez en el envio',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:19.032003',
+ 'star_rating': '4,0'}
+2020-10-03 13:29:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_4?ie=UTF8&pageNumber=4>
+{'comment': 'Igual que en la foto, práctico',
+ 'review_date': '2019-08-19 00:00:00',
+ 'review_title': 'Igual que en la foto',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:19.098823',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_5?ie=UTF8&pageNumber=5> (referer: https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_4?ie=UTF8&pageNumber=4)
+2020-10-03 13:29:23 [product_reviews] INFO: User Agent : b"'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36'"
+2020-10-03 13:29:23 [product_reviews] INFO: Proxy ip address is b'23.94.9.159:3128'
+2020-10-03 13:29:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_5?ie=UTF8&pageNumber=5>
+{'comment': 'Calidad precio correcto.',
+ 'review_date': '2020-05-23 00:00:00',
+ 'review_title': 'Espectacular',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:23.110284',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_5?ie=UTF8&pageNumber=5>
+{'comment': 'Decorativo',
+ 'review_date': '2019-08-10 00:00:00',
+ 'review_title': 'Rápida entrega',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:23.158875',
+ 'star_rating': '4,0'}
+2020-10-03 13:29:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_5?ie=UTF8&pageNumber=5>
+{'comment': 'Me ha gustado mucho. Es lo q estaba buscando.',
+ 'review_date': '2019-06-16 00:00:00',
+ 'review_title': 'Perfecto',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:23.215697',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_5?ie=UTF8&pageNumber=5>
+{'comment': 'Es lo que esperaba, todo bien.',
+ 'review_date': '2018-12-21 00:00:00',
+ 'review_title': 'Todo bien',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:23.268543',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_5?ie=UTF8&pageNumber=5>
+{'comment': 'Es adecuado a las imagenes',
+ 'review_date': '2019-01-18 00:00:00',
+ 'review_title': 'Fácil de limpiar',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:23.330340',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_5?ie=UTF8&pageNumber=5>
+{'comment': 'Ha demorado demaciado',
+ 'review_date': '2020-01-17 00:00:00',
+ 'review_title': '.',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:23.376285',
+ 'star_rating': '1,0'}
+2020-10-03 13:29:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_5?ie=UTF8&pageNumber=5>
+{'comment': 'Es muy práctico y duradero',
+ 'review_date': '2018-12-08 00:00:00',
+ 'review_title': 'Muy practico',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:23.429077',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_5?ie=UTF8&pageNumber=5>
+{'comment': 'Buen artículo da lo que dice',
+ 'review_date': '2018-11-14 00:00:00',
+ 'review_title': 'Fortaleza',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:23.502879',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_5?ie=UTF8&pageNumber=5>
+{'comment': 'Es lo que buscaba',
+ 'review_date': '2019-12-27 00:00:00',
+ 'review_title': 'La funcionalidad y el diseño',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:23.548756',
+ 'star_rating': '4,0'}
+2020-10-03 13:29:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_5?ie=UTF8&pageNumber=5>
+{'comment': 'Buscaba una solución higiénica, práctica y a la vez bonita y la '
+            'he encontrado. El adhesivo no lo he necesitado porque se aguanta '
+            'de pie perfectamente sin necesidad de engancharlo. Muy contenta '
+            'con la compra.',
+ 'review_date': '2017-10-06 00:00:00',
+ 'review_title': 'Muy practico y estetico',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:23.604608',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_6?ie=UTF8&pageNumber=6> (referer: https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_5?ie=UTF8&pageNumber=5)
+2020-10-03 13:29:26 [product_reviews] INFO: User Agent : b"'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36'"
+2020-10-03 13:29:26 [product_reviews] INFO: Proxy ip address is b'192.186.155.242:3128'
+2020-10-03 13:29:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_6?ie=UTF8&pageNumber=6>
+{'comment': 'Soporte para cepillos de dientes, de la marca Oral B, en acero '
+            'inoxidable, muy buen diseño y bonito. No desentona de ninguna de '
+            'las maneras que lo pongas, ya sea pegado en la pared, como es mi '
+            'caso o puesto sobre el mueble del lavabo.El adhesivo que lleva, '
+            'es redondo y grande de la marca 3M y una vez puesto no hay manera '
+            'de que se despegue.El envío llegó antes de la fecha y Amazon como '
+            'siempre un 10.',
+ 'review_date': '2019-10-12 00:00:00',
+ 'review_title': 'Soporte para cepillos Oral B.',
+ 'review_votes': 'A 3 personas les ha parecido esto útil',
+ 'scraping_date': '2020-10-03 13:29:26.958182',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_6?ie=UTF8&pageNumber=6>
+{'comment': 'Fácil de colocar y de limpiar, creo que ha sido una buena compra '
+            'para tener los cabezales ordenados y que ocupen poco espacio. Lo '
+            'he pegado en la puerta del armario del baño y queda perfecto.',
+ 'review_date': '2019-03-14 00:00:00',
+ 'review_title': 'Buena compra',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:27.053951',
+ 'star_rating': '4,0'}
+2020-10-03 13:29:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_6?ie=UTF8&pageNumber=6>
+{'comment': 'Quizá el precio un poco elevado para lo que realmente es, pero al '
+            'menos parece de buen material y resistente... cuando haya pasado '
+            'algo más de tiempo veremos si no se pica el cromado. A primera '
+            'vista, bien.',
+ 'review_date': '2018-11-05 00:00:00',
+ 'review_title': 'Bonito y funcional',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:27.109776',
+ 'star_rating': '4,0'}
+2020-10-03 13:29:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_6?ie=UTF8&pageNumber=6>
+{'comment': 'Buena compra, es cara en comparación con otros productos, pero '
+            'serían de plástico.Este es de acero, según dicen de acero '
+            'inoxidable, pesa bastante así qui yo he optado por ponerlo de pie '
+            'sobre el lavabo, pero tiene la opción te pegarlo ya que viene con '
+            'un adhesivo.Por lo demás cumple su función muy bien.',
+ 'review_date': '2018-02-09 00:00:00',
+ 'review_title': 'Bonito y practico',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:27.179638',
+ 'star_rating': '4,0'}
+2020-10-03 13:29:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_6?ie=UTF8&pageNumber=6>
+{'comment': 'Por higiene recomiendo este, no es de plástico, de fácil '
+            'limpieza, inoxidable, y muy práctico.',
+ 'review_date': '2020-04-15 00:00:00',
+ 'review_title': 'De buena calidad',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:27.237471',
+ 'star_rating': '4,0'}
+2020-10-03 13:29:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_6?ie=UTF8&pageNumber=6>
+{'comment': 'Perfecto,muy fácil de colocar..sólido y de buena calidad.. tal '
+            'cual la foto,muy practico ,una idea sencilla y bien elaborada,lo '
+            'recomiendo.',
+ 'review_date': '2017-09-28 00:00:00',
+ 'review_title': 'Perfecto',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:27.283349',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_6?ie=UTF8&pageNumber=6>
+{'comment': 'Comodo y articulo de calidad. Muy practico y elegante',
+ 'review_date': '2019-08-09 00:00:00',
+ 'review_title': 'Lo volveria a comprar',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:27.338351',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_6?ie=UTF8&pageNumber=6>
+{'comment': 'es un buen producto, un poco caro',
+ 'review_date': '2019-10-04 00:00:00',
+ 'review_title': 'buen producto',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:27.391038',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_6?ie=UTF8&pageNumber=6>
+{'comment': 'Muy útil. Lo que estaba buscando para que los cepilléis no estén '
+            'por e medio y no goteen.',
+ 'review_date': '2019-08-28 00:00:00',
+ 'review_title': 'Portacabezales son goteo',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:27.450864',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_7?ie=UTF8&pageNumber=7> (referer: https://www.amazon.es/Portacabezales-el%C3%A9ctricos-inoxidable-compatible-instalaci%C3%B3n/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_6?ie=UTF8&pageNumber=6)
+2020-10-03 13:29:30 [product_reviews] INFO: User Agent : b"'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36'"
+2020-10-03 13:29:30 [product_reviews] INFO: Proxy ip address is b'172.245.152.164:3128'
+2020-10-03 13:29:30 [product_reviews] WARNING:  Blocked no information on this page
+2020-10-03 13:29:30 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-10-03 13:29:30 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'crawlera/delay/reset_backoff': 7,
+ 'crawlera/request': 7,
+ 'crawlera/request/method/GET': 7,
+ 'crawlera/response': 7,
+ 'crawlera/response/status/200': 7,
+ 'downloader/request_bytes': 4379,
+ 'downloader/request_count': 7,
+ 'downloader/request_method_count/GET': 7,
+ 'downloader/response_bytes': 602286,
+ 'downloader/response_count': 7,
+ 'downloader/response_status_count/200': 7,
+ 'elapsed_time_seconds': 27.543054,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 10, 3, 12, 29, 30, 612237),
+ 'item_scraped_count': 59,
+ 'log_count/DEBUG': 66,
+ 'log_count/INFO': 26,
+ 'log_count/WARNING': 1,
+ 'request_depth_max': 6,
+ 'response_received_count': 7,
+ 'scheduler/dequeued': 7,
+ 'scheduler/dequeued/memory': 7,
+ 'scheduler/enqueued': 7,
+ 'scheduler/enqueued/memory': 7,
+ 'start_time': datetime.datetime(2020, 10, 3, 12, 29, 3, 69183)}
+2020-10-03 13:29:30 [scrapy.core.engine] INFO: Spider closed (finished)
+2020-10-03 13:29:30 [werkzeug] INFO: 127.0.0.1 - - [03/Oct/2020 13:29:30] "[37mGET /scrape HTTP/1.1[0m" 200 -
+2020-10-03 13:29:33 [werkzeug] INFO: 127.0.0.1 - - [03/Oct/2020 13:29:33] "[32mPOST / HTTP/1.1[0m" 302 -
+2020-10-03 13:29:35 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'amazon',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 32,
+ 'COOKIES_ENABLED': False,
+ 'DOWNLOAD_TIMEOUT': 600,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_ENCODING': 'UTF-8',
+ 'LOG_FILE': './scrapy_output.txt',
+ 'LOG_STDOUT': True,
+ 'NEWSPIDER_MODULE': 'amazon.spiders',
+ 'SPIDER_MODULES': ['amazon.spiders']}
+2020-10-03 13:29:35 [scrapy.extensions.telnet] INFO: Telnet Password: 0448c57682ab8cb3
+2020-10-03 13:29:35 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-10-03 13:29:35 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'random_useragent.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy_crawlera.CrawleraMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-10-03 13:29:35 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-10-03 13:29:35 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2020-10-03 13:29:35 [scrapy.core.engine] INFO: Spider opened
+2020-10-03 13:29:35 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-10-03 13:29:35 [root] INFO: Using crawlera at http://proxy.crawlera.com:8010 (apikey: 7cc8380)
+2020-10-03 13:29:35 [root] INFO: CrawleraMiddleware: disabling download delays on Scrapy side to optimize delays introduced by Crawlera. To avoid this behaviour you can use the CRAWLERA_PRESERVE_DELAY setting but keep in mind that this may slow down the crawl significantly
+2020-10-03 13:29:35 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-10-03 13:29:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.es/product-reviews/B078R7FC7G> (referer: None)
+2020-10-03 13:29:39 [product_reviews] INFO: User Agent : b"'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36'"
+2020-10-03 13:29:39 [product_reviews] INFO: Proxy ip address is b'107.173.48.66:3128'
+2020-10-03 13:29:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B078R7FC7G>
+{'comment': 'Llevamos varios meses con él y todavía no se ha caído, a pesar de '
+            'estar únicamente sujeto con adhesivo al azulejo del baño.El '
+            'cepillo eléctrico se sujeta genial y el soporte se limpia muy '
+            'fácilmente. Por fin tenemos el mueble del lavabo limpio y '
+            'despejadoLo recomiendo',
+ 'review_date': '2020-03-27 00:00:00',
+ 'review_title': 'Estable, muy buena adhesión y limpio',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:40.046577',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B078R7FC7G>
+{'comment': 'De momento, aguanta pegado y lleva aprox. 2 meses.Lo único malo, '
+            'es que está siempre sucio, ya que el resto de agua que queda en '
+            'las boquillas y el propio cepillo gotean y siempre está con '
+            'manchas.',
+ 'review_date': '2019-12-14 00:00:00',
+ 'review_title': 'Buen invento, pero siempre sucio.',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:40.196215',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B078R7FC7G>
+{'comment': 'Cumple muy bien su función. Los cepillosestan siempre en su '
+            'sitio, limpios y secos.',
+ 'review_date': '2019-08-29 00:00:00',
+ 'review_title': 'Muy práctico.',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:40.404156',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B078R7FC7G>
+{'comment': 'La adhesión buenísima, queda perfecto y es súper práctico. '
+            'Recomendable 100%',
+ 'review_date': '2020-01-20 00:00:00',
+ 'review_title': 'Perfecto',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:40.526320',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B078R7FC7G>
+{'comment': 'Perfecto para mantener en orden los cepillos electricos de '
+            'dientes con elegancia',
+ 'review_date': '2020-01-17 00:00:00',
+ 'review_title': 'Orden y elegancia',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:40.602326',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B078R7FC7G>
+{'comment': 'Estéticamente es bonito, de momento aguanta perfectamente pegado '
+            'en la pared del baño',
+ 'review_date': '2020-05-12 00:00:00',
+ 'review_title': 'Bonito y adherente',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:40.676207',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B078R7FC7G>
+{'comment': 'Tal cual se muestra',
+ 'review_date': '2020-03-29 00:00:00',
+ 'review_title': 'Tal cual',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:40.750688',
+ 'star_rating': '4,0'}
+2020-10-03 13:29:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B078R7FC7G>
+{'comment': 'Es lo más cómodo e higiénico para poner los cepillos, muy buena '
+            'solución. Lo recomiendo.',
+ 'review_date': '2020-07-17 00:00:00',
+ 'review_title': 'Cómodo e higienico',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:40.877562',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B078R7FC7G>
+{'comment': 'Un año tiene y como el primer día, el adhesivo muy potente.',
+ 'review_date': '2020-04-25 00:00:00',
+ 'review_title': 'Perfecto',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:40.977129',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B078R7FC7G>
+{'comment': 'Fácil de instalar y de limpiar. Acabado correcto. Satisfecho con '
+            'la compra, entregado en plazo.',
+ 'review_date': '2018-11-12 00:00:00',
+ 'review_title': 'Muy útil',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:41.050930',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.es/OCTOPODIS-Sostenedor-electr%C3%B3nico-instalaci%C3%B3n-independiente/product-reviews/B078R7FC7G/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2> (referer: https://www.amazon.es/product-reviews/B078R7FC7G)
+2020-10-03 13:29:44 [product_reviews] INFO: User Agent : b"'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36'"
+2020-10-03 13:29:44 [product_reviews] INFO: Proxy ip address is b'172.245.68.214:3128'
+2020-10-03 13:29:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/OCTOPODIS-Sostenedor-electr%C3%B3nico-instalaci%C3%B3n-independiente/product-reviews/B078R7FC7G/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2>
+{'comment': 'Tal y como se muestra. Muy práctico.',
+ 'review_date': '2019-08-15 00:00:00',
+ 'review_title': 'Muy práctico y limpio.',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:44.247087',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/OCTOPODIS-Sostenedor-electr%C3%B3nico-instalaci%C3%B3n-independiente/product-reviews/B078R7FC7G/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2>
+{'comment': 'Es muy útil y práctico.',
+ 'review_date': '2019-02-01 00:00:00',
+ 'review_title': 'Lo recomiendo',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:44.394689',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/OCTOPODIS-Sostenedor-electr%C3%B3nico-instalaci%C3%B3n-independiente/product-reviews/B078R7FC7G/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2>
+{'comment': 'Perfecta',
+ 'review_date': '2019-12-14 00:00:00',
+ 'review_title': 'Muy bien',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:44.486410',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/OCTOPODIS-Sostenedor-electr%C3%B3nico-instalaci%C3%B3n-independiente/product-reviews/B078R7FC7G/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2>
+{'comment': 'Muy practico . Lo tienes todo muy organizado',
+ 'review_date': '2018-11-12 00:00:00',
+ 'review_title': 'Octopus',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:44.614568',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/OCTOPODIS-Sostenedor-electr%C3%B3nico-instalaci%C3%B3n-independiente/product-reviews/B078R7FC7G/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2>
+{'comment': 'todo perfecto',
+ 'review_date': '2019-10-08 00:00:00',
+ 'review_title': 'bien',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:44.749708',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/OCTOPODIS-Sostenedor-electr%C3%B3nico-instalaci%C3%B3n-independiente/product-reviews/B078R7FC7G/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2>
+{'comment': 'todo perfecto!!',
+ 'review_date': '2019-07-24 00:00:00',
+ 'review_title': 'todo muy bien!!',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:44.923242',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/OCTOPODIS-Sostenedor-electr%C3%B3nico-instalaci%C3%B3n-independiente/product-reviews/B078R7FC7G/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2>
+{'comment': '👍',
+ 'review_date': '2020-05-04 00:00:00',
+ 'review_title': 'queda muy recojido y limpio',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:45.021119',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/OCTOPODIS-Sostenedor-electr%C3%B3nico-instalaci%C3%B3n-independiente/product-reviews/B078R7FC7G/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2>
+{'comment': 'Muy bien todo',
+ 'review_date': '2019-01-05 00:00:00',
+ 'review_title': 'Muy bien',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:45.071879',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/OCTOPODIS-Sostenedor-electr%C3%B3nico-instalaci%C3%B3n-independiente/product-reviews/B078R7FC7G/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2>
+{'comment': 'De momento bien, muy cómodo y limpio espero que tenga buena '
+            'calidad la pegatina.Buscaba una base para los cepillos y que no '
+            'ocupará mucho espacio y fuera fácil de limpiarLo recomiendo',
+ 'review_date': '2020-06-07 00:00:00',
+ 'review_title': 'Elegante y comodidad',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:45.127720',
+ 'star_rating': '5,0'}
+2020-10-03 13:29:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/OCTOPODIS-Sostenedor-electr%C3%B3nico-instalaci%C3%B3n-independiente/product-reviews/B078R7FC7G/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2>
+{'comment': 'Justo lo que se muestra en la imagen',
+ 'review_date': '2020-05-08 00:00:00',
+ 'review_title': 'Soporte adecuado',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:29:45.195622',
+ 'star_rating': '4,0'}
+2020-10-03 13:29:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.es/OCTOPODIS-Sostenedor-electr%C3%B3nico-instalaci%C3%B3n-independiente/product-reviews/B078R7FC7G/ref=cm_cr_arp_d_paging_btm_3?ie=UTF8&pageNumber=3> (referer: https://www.amazon.es/OCTOPODIS-Sostenedor-electr%C3%B3nico-instalaci%C3%B3n-independiente/product-reviews/B078R7FC7G/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2)
+2020-10-03 13:29:48 [product_reviews] INFO: User Agent : b"'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36'"
+2020-10-03 13:29:48 [product_reviews] INFO: Proxy ip address is b'23.229.88.203:3128'
+2020-10-03 13:29:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/OCTOPODIS-Sostenedor-electr%C3%B3nico-instalaci%C3%B3n-independiente/product-reviews/B078R7FC7G/ref=cm_cr_arp_d_paging_btm_3?ie=UTF8&pageNumber=3>
+{'comment': 'es de un tamaño que se puede colocar en cualquier sitio, ademas '
+            'entran los recambios sin quitar el protector, muy bueno',
+ 'review_date': '2019-12-31 00:00:00',
+ 'review_title': 'tamaño perfectp',
+ 'review_votes': 'A 2 personas les ha parecido esto útil',
+ 'scraping_date': '2020-10-03 13:29:48.582829',
+ 'star_rating': '4,0'}
+2020-10-03 13:29:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.es/OCTOPODIS-Sostenedor-electr%C3%B3nico-instalaci%C3%B3n-independiente/product-reviews/B078R7FC7G/ref=cm_cr_arp_d_paging_btm_4?ie=UTF8&pageNumber=4> (referer: https://www.amazon.es/OCTOPODIS-Sostenedor-electr%C3%B3nico-instalaci%C3%B3n-independiente/product-reviews/B078R7FC7G/ref=cm_cr_arp_d_paging_btm_3?ie=UTF8&pageNumber=3)
+2020-10-03 13:29:52 [product_reviews] INFO: User Agent : b"'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36'"
+2020-10-03 13:29:52 [product_reviews] INFO: Proxy ip address is b'170.130.58.57:8800'
+2020-10-03 13:29:52 [product_reviews] WARNING:  Blocked no information on this page
+2020-10-03 13:29:52 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-10-03 13:29:52 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'crawlera/delay/reset_backoff': 4,
+ 'crawlera/request': 4,
+ 'crawlera/request/method/GET': 4,
+ 'crawlera/response': 4,
+ 'crawlera/response/status/200': 4,
+ 'downloader/request_bytes': 2310,
+ 'downloader/request_count': 4,
+ 'downloader/request_method_count/GET': 4,
+ 'downloader/response_bytes': 342289,
+ 'downloader/response_count': 4,
+ 'downloader/response_status_count/200': 4,
+ 'elapsed_time_seconds': 17.4085,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 10, 3, 12, 29, 52, 744880),
+ 'item_scraped_count': 21,
+ 'log_count/DEBUG': 25,
+ 'log_count/INFO': 20,
+ 'log_count/WARNING': 1,
+ 'request_depth_max': 3,
+ 'response_received_count': 4,
+ 'scheduler/dequeued': 4,
+ 'scheduler/dequeued/memory': 4,
+ 'scheduler/enqueued': 4,
+ 'scheduler/enqueued/memory': 4,
+ 'start_time': datetime.datetime(2020, 10, 3, 12, 29, 35, 336380)}
+2020-10-03 13:29:52 [scrapy.core.engine] INFO: Spider closed (finished)
+2020-10-03 13:29:52 [werkzeug] INFO: 127.0.0.1 - - [03/Oct/2020 13:29:52] "[37mGET /scrape HTTP/1.1[0m" 200 -
+2020-10-03 13:29:54 [werkzeug] INFO: 127.0.0.1 - - [03/Oct/2020 13:29:54] "[32mPOST / HTTP/1.1[0m" 302 -
+2020-10-03 13:29:56 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'amazon',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 32,
+ 'COOKIES_ENABLED': False,
+ 'DOWNLOAD_TIMEOUT': 600,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_ENCODING': 'UTF-8',
+ 'LOG_FILE': './scrapy_output.txt',
+ 'LOG_STDOUT': True,
+ 'NEWSPIDER_MODULE': 'amazon.spiders',
+ 'SPIDER_MODULES': ['amazon.spiders']}
+2020-10-03 13:29:56 [scrapy.extensions.telnet] INFO: Telnet Password: 86fa7c6b9f370cee
+2020-10-03 13:29:56 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-10-03 13:29:56 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'random_useragent.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy_crawlera.CrawleraMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-10-03 13:29:56 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-10-03 13:29:56 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2020-10-03 13:29:56 [scrapy.core.engine] INFO: Spider opened
+2020-10-03 13:29:56 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-10-03 13:29:56 [root] INFO: Using crawlera at http://proxy.crawlera.com:8010 (apikey: 7cc8380)
+2020-10-03 13:29:56 [root] INFO: CrawleraMiddleware: disabling download delays on Scrapy side to optimize delays introduced by Crawlera. To avoid this behaviour you can use the CRAWLERA_PRESERVE_DELAY setting but keep in mind that this may slow down the crawl significantly
+2020-10-03 13:29:56 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-10-03 13:30:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.es/product-reviews/B06XGNQJD5> (referer: None)
+2020-10-03 13:30:00 [product_reviews] INFO: User Agent : b"'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36'"
+2020-10-03 13:30:00 [product_reviews] INFO: Proxy ip address is b'23.254.9.186:3128'
+2020-10-03 13:30:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B06XGNQJD5>
+{'comment': 'Las perchas se ven de buena calidad y de momento aguantan bien '
+            'con dos toallas colgadas solo con la ventosa. El servicio ha sido '
+            'inmejorable, entrega rápida e incluso me enviaron un email con '
+            'instrucciones ampliadas por si me hacían falta.',
+ 'review_date': '2018-02-13 00:00:00',
+ 'review_title': 'Carmen',
+ 'review_votes': 'A una persona le ha parecido esto útil',
+ 'scraping_date': '2020-10-03 13:30:00.170074',
+ 'star_rating': '5,0'}
+2020-10-03 13:30:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B06XGNQJD5>
+{'comment': 'De momento no se caen, y los tengo más de un mes. El diseño '
+            'flojea un poco, a que se nota que es plastiquete, pero su función '
+            'la hacen bien.',
+ 'review_date': '2019-11-12 00:00:00',
+ 'review_title': 'No se caen',
+ 'review_votes': 'A una persona le ha parecido esto útil',
+ 'scraping_date': '2020-10-03 13:30:00.223129',
+ 'star_rating': '5,0'}
+2020-10-03 13:30:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B06XGNQJD5>
+{'comment': 'Me encanta el estilo, pero necesitaría el resto de complementos '
+            'de baño con el mismos sistema y estilo, barra para toalla, aro '
+            'para toalla, porta rollo de papel higiénico...',
+ 'review_date': '2019-08-20 00:00:00',
+ 'review_title': 'la sencillez de instalación',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:30:00.273916',
+ 'star_rating': '5,0'}
+2020-10-03 13:30:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B06XGNQJD5>
+{'comment': 'Se sujeta sin problemas,en las puertas del armario. Lo utilizo '
+            'para paños de cocina.',
+ 'review_date': '2019-09-10 00:00:00',
+ 'review_title': 'Buena compra',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:30:00.326730',
+ 'star_rating': '5,0'}
+2020-10-03 13:30:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B06XGNQJD5>
+{'comment': 'No se pega ni con ventosa ni con cemento en los azulejos del baño '
+            'ni en los de la cocina.',
+ 'review_date': '2020-08-12 00:00:00',
+ 'review_title': 'No funciona',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:30:00.381485',
+ 'star_rating': '1,0'}
+2020-10-03 13:30:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B06XGNQJD5>
+{'comment': 'Es la segunda vez que compro, se adhieren muy bien.',
+ 'review_date': '2019-03-23 00:00:00',
+ 'review_title': 'Muy efectivos',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:30:00.433340',
+ 'star_rating': '5,0'}
+2020-10-03 13:30:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B06XGNQJD5>
+{'comment': 'Lo utilicé como perchas para toallas en el baño',
+ 'review_date': '2019-10-15 00:00:00',
+ 'review_title': 'Perfecto',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:30:00.493315',
+ 'star_rating': '5,0'}
+2020-10-03 13:30:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B06XGNQJD5>
+{'comment': 'Ajuste perfecto, los albornoces se pueden colgar sin '
+            'problema.Aguanta el peso perfectamente',
+ 'review_date': '2019-02-28 00:00:00',
+ 'review_title': 'Perfecto',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:30:00.584933',
+ 'star_rating': '5,0'}
+2020-10-03 13:30:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B06XGNQJD5>
+{'comment': 'Como se describe, muy buen envio y embalaje. Son unas perchas muy '
+            'bonitas, las he colocado en la parte interior de la mampara de la '
+            'ducha y de momento no se han caido, llevan ya una semana. En los '
+            'azulejos no pude ponerlas, no son lisos y la ventosa no '
+            'funcionaba.',
+ 'review_date': '2019-06-28 00:00:00',
+ 'review_title': 'ADECUADO',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:30:00.663688',
+ 'star_rating': '4,0'}
+2020-10-03 13:30:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B06XGNQJD5>
+{'comment': 'Se adhieren muy bien a cualquier superficie, lo único es que son '
+            'más grandes de los que me esperaba y son de plástico imitación a '
+            'metal.Muy útiles como percheros, o toalleros.',
+ 'review_date': '2017-12-26 00:00:00',
+ 'review_title': 'Funcionan muy bien, pero son de plástico',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:30:00.719537',
+ 'star_rating': '3,0'}
+2020-10-03 13:30:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.es/OCTOPODIS-ventosa-servilletas-fijaci%C3%B3n-baldosas/product-reviews/B06XGNQJD5/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2> (referer: https://www.amazon.es/product-reviews/B06XGNQJD5)
+2020-10-03 13:30:04 [product_reviews] INFO: User Agent : b"'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0'"
+2020-10-03 13:30:04 [product_reviews] INFO: Proxy ip address is b'181.215.120.83:3128'
+2020-10-03 13:30:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/OCTOPODIS-ventosa-servilletas-fijaci%C3%B3n-baldosas/product-reviews/B06XGNQJD5/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2>
+{'comment': 'Llevan fijados en la pared mas de un mes y ninguno se ha caído. '
+            'Soportan mucho peso y quedan muy bien, con estética metálica que '
+            'no parece de ventosa.',
+ 'review_date': '2017-11-06 00:00:00',
+ 'review_title': 'Buena calidad',
+ 'review_votes': 'A una persona le ha parecido esto útil',
+ 'scraping_date': '2020-10-03 13:30:04.068434',
+ 'star_rating': '5,0'}
+2020-10-03 13:30:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.es/OCTOPODIS-ventosa-servilletas-fijaci%C3%B3n-baldosas/product-reviews/B06XGNQJD5/ref=cm_cr_arp_d_paging_btm_3?ie=UTF8&pageNumber=3> (referer: https://www.amazon.es/OCTOPODIS-ventosa-servilletas-fijaci%C3%B3n-baldosas/product-reviews/B06XGNQJD5/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2)
+2020-10-03 13:30:07 [product_reviews] INFO: User Agent : b"'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.91 Safari/537.36'"
+2020-10-03 13:30:07 [product_reviews] INFO: Proxy ip address is b'64.137.105.185:3128'
+2020-10-03 13:30:07 [product_reviews] WARNING:  Blocked no information on this page
+2020-10-03 13:30:07 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-10-03 13:30:07 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'crawlera/delay/reset_backoff': 3,
+ 'crawlera/request': 3,
+ 'crawlera/request/method/GET': 3,
+ 'crawlera/response': 3,
+ 'crawlera/response/status/200': 3,
+ 'downloader/request_bytes': 1551,
+ 'downloader/request_count': 3,
+ 'downloader/request_method_count/GET': 3,
+ 'downloader/response_bytes': 256286,
+ 'downloader/response_count': 3,
+ 'downloader/response_status_count/200': 3,
+ 'elapsed_time_seconds': 10.847851,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 10, 3, 12, 30, 7, 811967),
+ 'item_scraped_count': 11,
+ 'log_count/DEBUG': 14,
+ 'log_count/INFO': 18,
+ 'log_count/WARNING': 1,
+ 'request_depth_max': 2,
+ 'response_received_count': 3,
+ 'scheduler/dequeued': 3,
+ 'scheduler/dequeued/memory': 3,
+ 'scheduler/enqueued': 3,
+ 'scheduler/enqueued/memory': 3,
+ 'start_time': datetime.datetime(2020, 10, 3, 12, 29, 56, 964116)}
+2020-10-03 13:30:07 [scrapy.core.engine] INFO: Spider closed (finished)
+2020-10-03 13:30:07 [werkzeug] INFO: 127.0.0.1 - - [03/Oct/2020 13:30:07] "[37mGET /scrape HTTP/1.1[0m" 200 -
+2020-10-03 13:30:10 [werkzeug] INFO: 127.0.0.1 - - [03/Oct/2020 13:30:10] "[32mPOST / HTTP/1.1[0m" 302 -
+2020-10-03 13:30:12 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'amazon',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 32,
+ 'COOKIES_ENABLED': False,
+ 'DOWNLOAD_TIMEOUT': 600,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_ENCODING': 'UTF-8',
+ 'LOG_FILE': './scrapy_output.txt',
+ 'LOG_STDOUT': True,
+ 'NEWSPIDER_MODULE': 'amazon.spiders',
+ 'SPIDER_MODULES': ['amazon.spiders']}
+2020-10-03 13:30:12 [scrapy.extensions.telnet] INFO: Telnet Password: ccbccb77f1e62e88
+2020-10-03 13:30:12 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-10-03 13:30:12 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'random_useragent.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy_crawlera.CrawleraMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-10-03 13:30:12 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-10-03 13:30:12 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2020-10-03 13:30:12 [scrapy.core.engine] INFO: Spider opened
+2020-10-03 13:30:12 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-10-03 13:30:12 [root] INFO: Using crawlera at http://proxy.crawlera.com:8010 (apikey: 7cc8380)
+2020-10-03 13:30:12 [root] INFO: CrawleraMiddleware: disabling download delays on Scrapy side to optimize delays introduced by Crawlera. To avoid this behaviour you can use the CRAWLERA_PRESERVE_DELAY setting but keep in mind that this may slow down the crawl significantly
+2020-10-03 13:30:12 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-10-03 13:30:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.es/product-reviews/B078RCN9BN> (referer: None)
+2020-10-03 13:30:16 [product_reviews] INFO: User Agent : b"'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36'"
+2020-10-03 13:30:16 [product_reviews] INFO: Proxy ip address is b'23.254.6.48:3128'
+2020-10-03 13:30:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B078RCN9BN>
+{'comment': 'OCTOPODIS - Gancho ventosa. Buen producto relación calidad '
+            'precio, buen acabado de calidad (PVC). De momento si se ponen '
+            'correctamente el poder de succión es muy bueno, no se caen que es '
+            'de lo que se trata. Ahora cuando haya humedad en el baño ya '
+            'veremos. Se pueden poner en la parte trasera de la puerta de '
+            'madera. Muy recomendable. Saludos.',
+ 'review_date': '2020-09-05 00:00:00',
+ 'review_title': 'OCTOPODIS - Gancho ventosa',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:30:16.278128',
+ 'star_rating': '5,0'}
+2020-10-03 13:30:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B078RCN9BN>
+{'comment': 'Hola,Compramos este producto hace un dos meses para el baño y ahí '
+            'siguen. Habíamos probado otras alternativas y al cabo del tiempo '
+            'cedían con el peso de las toallas, sobre todo las húmedas después '
+            'de ducharse. Muy bonita estética, facilidad de instalación y '
+            'funcionalidad. Acabado como atornillado. Recomendable 100%.',
+ 'review_date': '2020-03-08 00:00:00',
+ 'review_title': 'Geniales',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:30:16.372910',
+ 'star_rating': '5,0'}
+2020-10-03 13:30:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B078RCN9BN>
+{'comment': 'Muy bonitos y cómodos de poner. Se queda muy sujeto.',
+ 'review_date': '2020-09-25 00:00:00',
+ 'review_title': 'Fantásticos',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:30:16.424762',
+ 'star_rating': '5,0'}
+2020-10-03 13:30:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B078RCN9BN>
+{'comment': 'Pega muy bien. Aguanta de sobra toallas grandes.practico y fácil '
+            'de poner y quitar',
+ 'review_date': '2018-12-19 00:00:00',
+ 'review_title': 'practico y buena relación calidad precio',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:30:16.479584',
+ 'star_rating': '5,0'}
+2020-10-03 13:30:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B078RCN9BN>
+{'comment': 'Los he puesto solo con ventosa, sin pegamento y aguantan bien.',
+ 'review_date': '2019-12-08 00:00:00',
+ 'review_title': 'Aguantan bien sin pegar',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:30:16.586634',
+ 'star_rating': '5,0'}
+2020-10-03 13:30:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B078RCN9BN>
+{'comment': 'Una semana con 1 kg de peso y bien',
+ 'review_date': '2019-02-11 00:00:00',
+ 'review_title': 'Se queda en la pared',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:30:16.744903',
+ 'star_rating': '5,0'}
+2020-10-03 13:30:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B078RCN9BN>
+{'comment': 'La ventosa va muy bien',
+ 'review_date': '2019-11-06 00:00:00',
+ 'review_title': 'Muy buenos',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:30:16.893488',
+ 'star_rating': '5,0'}
+2020-10-03 13:30:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.es/OCTOPODIS-ventosa-servilletas-fijaci%C3%B3n-baldosas/product-reviews/B078RCN9BN/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2> (referer: https://www.amazon.es/product-reviews/B078RCN9BN)
+2020-10-03 13:30:20 [product_reviews] INFO: User Agent : b"'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.91 Safari/537.36'"
+2020-10-03 13:30:20 [product_reviews] INFO: Proxy ip address is b'23.229.120.57:3128'
+2020-10-03 13:30:20 [product_reviews] WARNING:  Blocked no information on this page
+2020-10-03 13:30:20 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-10-03 13:30:20 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'crawlera/delay/reset_backoff': 2,
+ 'crawlera/request': 2,
+ 'crawlera/request/method/GET': 2,
+ 'crawlera/response': 2,
+ 'crawlera/response/status/200': 2,
+ 'downloader/request_bytes': 931,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 170004,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 8.256636,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 10, 3, 12, 30, 20, 487360),
+ 'item_scraped_count': 7,
+ 'log_count/DEBUG': 9,
+ 'log_count/INFO': 16,
+ 'log_count/WARNING': 1,
+ 'request_depth_max': 1,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2020, 10, 3, 12, 30, 12, 230724)}
+2020-10-03 13:30:20 [scrapy.core.engine] INFO: Spider closed (finished)
+2020-10-03 13:30:20 [werkzeug] INFO: 127.0.0.1 - - [03/Oct/2020 13:30:20] "[37mGET /scrape HTTP/1.1[0m" 200 -
+2020-10-03 13:30:23 [werkzeug] INFO: 127.0.0.1 - - [03/Oct/2020 13:30:23] "[32mPOST / HTTP/1.1[0m" 302 -
+2020-10-03 13:30:25 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'amazon',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 32,
+ 'COOKIES_ENABLED': False,
+ 'DOWNLOAD_TIMEOUT': 600,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_ENCODING': 'UTF-8',
+ 'LOG_FILE': './scrapy_output.txt',
+ 'LOG_STDOUT': True,
+ 'NEWSPIDER_MODULE': 'amazon.spiders',
+ 'SPIDER_MODULES': ['amazon.spiders']}
+2020-10-03 13:30:25 [scrapy.extensions.telnet] INFO: Telnet Password: b75fffa65d3ada0c
+2020-10-03 13:30:25 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-10-03 13:30:25 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'random_useragent.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy_crawlera.CrawleraMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-10-03 13:30:25 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-10-03 13:30:25 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2020-10-03 13:30:25 [scrapy.core.engine] INFO: Spider opened
+2020-10-03 13:30:25 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-10-03 13:30:25 [root] INFO: Using crawlera at http://proxy.crawlera.com:8010 (apikey: 7cc8380)
+2020-10-03 13:30:25 [root] INFO: CrawleraMiddleware: disabling download delays on Scrapy side to optimize delays introduced by Crawlera. To avoid this behaviour you can use the CRAWLERA_PRESERVE_DELAY setting but keep in mind that this may slow down the crawl significantly
+2020-10-03 13:30:25 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-10-03 13:30:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.es/product-reviews/B07XDJKGBQ> (referer: None)
+2020-10-03 13:30:28 [product_reviews] INFO: User Agent : b"'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36'"
+2020-10-03 13:30:28 [product_reviews] INFO: Proxy ip address is b'192.241.96.6:3128'
+2020-10-03 13:30:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B07XDJKGBQ>
+{'comment': 'Cogí este artículo ya que pensaba que me iba a ayudar a la hora '
+            'de tener organizado el cajón del secador y demás aparatos para el '
+            'pelo. Pero no me sirve, queda muy alto y no cierra el cajón. Este '
+            'organizador está pensado para tenerlo sobre la repisa del lavabo '
+            'o en alguna zona en la que quieras tener acceso fácil y rápido a '
+            'estos aparatos, si les das mucho uso. En casa la verdad es que lo '
+            'que más usamos es el secador, el resto de vez en cuando. Por lo '
+            'que tener este organizador a la vista, me quita espacio y no me '
+            'sirve.Sin embargo el tapete de silicona si lo veo muy práctico, '
+            'ya que siempre que se va a usar la plancha vas con miedo a ver '
+            'dónde la dejas porque está caliente y puedes quemar la superficie '
+            'o porque dicha superficie está algo mojada y es peligroso. '
+            'Colocando el tapete encima se acaba el problema. Es blandito y se '
+            'rula y no ocupa casi espacio para guardarlo.',
+ 'review_date': '2020-07-06 00:00:00',
+ 'review_title': 'Útil según se mire',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:30:28.449104',
+ 'star_rating': '4,0'}
+2020-10-03 13:30:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B07XDJKGBQ>
+{'comment': 'No tenía claro que encajara todo bien, pero me ha '
+            'sorprendido.Queda todo bastante bien, y resulta cómodo.Su cuerpo '
+            'es metálico de color negro y cada espacio tiene una parte de '
+            'plástico donde entra en contacto con el accesorio. Es resistente '
+            'a altas temperaturas.Mucho mejor de lo que pensaba muy contenta '
+            'con el resultado.Me parece ideal para no tener todo por ahí hasta '
+            'que se enfría.Muy recomendable para poner un poco de orden.',
+ 'review_date': '2020-07-04 00:00:00',
+ 'review_title': 'Si tienes muchos accesorios o trabajas en peluquería me '
+                 'parece muy necesario.',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:30:28.503956',
+ 'star_rating': '5,0'}
+2020-10-03 13:30:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B07XDJKGBQ>
+{'comment': 'Mucho mejor en persona de lo que esperaba, el soporte u '
+            'organizador es metálico, se ve muy resistente y el cubículo para '
+            'cada accesorio de peinado es de plástico, como indica resistente '
+            'a altas temperaturas.Es una forma de tener todo a mano bien '
+            'colocado, lo único es que no se muy bien como colocar los cables '
+            'que visualmente quede bien, si dejarlos colgando, o doblarlos y '
+            'con una gomitas dejarlos a un lado...',
+ 'review_date': '2020-06-30 00:00:00',
+ 'review_title': 'Organizador de sobremesa',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:30:28.557809',
+ 'star_rating': '4,0'}
+2020-10-03 13:30:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.es/product-reviews/B07XDJKGBQ>
+{'comment': 'Buen tamaño (largo 25 cm y ancho 17 cm) y práctico para tenerlo '
+            'todo a mano en un sitio.',
+ 'review_date': '2020-07-28 00:00:00',
+ 'review_title': 'ÚTIL y práctico',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:30:28.614676',
+ 'star_rating': '4,0'}
+2020-10-03 13:30:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.es/OCTOPODIS-Organizador-Accesorios-Secadora-Alisador/product-reviews/B07XDJKGBQ/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2> (referer: https://www.amazon.es/product-reviews/B07XDJKGBQ)
+2020-10-03 13:30:32 [product_reviews] INFO: User Agent : b"'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36'"
+2020-10-03 13:30:32 [product_reviews] INFO: Proxy ip address is b'23.250.37.68:3128'
+2020-10-03 13:30:32 [product_reviews] WARNING:  Blocked no information on this page
+2020-10-03 13:30:32 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-10-03 13:30:32 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'crawlera/delay/reset_backoff': 2,
+ 'crawlera/request': 2,
+ 'crawlera/request/method/GET': 2,
+ 'crawlera/response': 2,
+ 'crawlera/response/status/200': 2,
+ 'downloader/request_bytes': 930,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 174948,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 7.643856,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 10, 3, 12, 30, 32, 751348),
+ 'item_scraped_count': 4,
+ 'log_count/DEBUG': 6,
+ 'log_count/INFO': 16,
+ 'log_count/WARNING': 1,
+ 'request_depth_max': 1,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2020, 10, 3, 12, 30, 25, 107492)}
+2020-10-03 13:30:32 [scrapy.core.engine] INFO: Spider closed (finished)
+2020-10-03 13:30:32 [werkzeug] INFO: 127.0.0.1 - - [03/Oct/2020 13:30:32] "[37mGET /scrape HTTP/1.1[0m" 200 -
+2020-10-03 13:30:34 [werkzeug] INFO: 127.0.0.1 - - [03/Oct/2020 13:30:34] "[32mPOST / HTTP/1.1[0m" 302 -
+2020-10-03 13:30:36 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'amazon',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 32,
+ 'COOKIES_ENABLED': False,
+ 'DOWNLOAD_TIMEOUT': 600,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_ENCODING': 'UTF-8',
+ 'LOG_FILE': './scrapy_output.txt',
+ 'LOG_STDOUT': True,
+ 'NEWSPIDER_MODULE': 'amazon.spiders',
+ 'SPIDER_MODULES': ['amazon.spiders']}
+2020-10-03 13:30:36 [scrapy.extensions.telnet] INFO: Telnet Password: 46366a179867b89a
+2020-10-03 13:30:36 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-10-03 13:30:36 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'random_useragent.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy_crawlera.CrawleraMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-10-03 13:30:37 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-10-03 13:30:37 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2020-10-03 13:30:37 [scrapy.core.engine] INFO: Spider opened
+2020-10-03 13:30:37 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-10-03 13:30:37 [root] INFO: Using crawlera at http://proxy.crawlera.com:8010 (apikey: 7cc8380)
+2020-10-03 13:30:37 [root] INFO: CrawleraMiddleware: disabling download delays on Scrapy side to optimize delays introduced by Crawlera. To avoid this behaviour you can use the CRAWLERA_PRESERVE_DELAY setting but keep in mind that this may slow down the crawl significantly
+2020-10-03 13:30:37 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-10-03 13:30:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.es/product-reviews/B08BW6C774> (referer: None)
+2020-10-03 13:30:42 [product_reviews] INFO: User Agent : b"'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36'"
+2020-10-03 13:30:42 [product_reviews] INFO: Proxy ip address is b'199.34.83.185:3128'
+2020-10-03 13:30:43 [product_reviews] WARNING:  Blocked no information on this page
+2020-10-03 13:30:43 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-10-03 13:30:43 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'crawlera/delay/reset_backoff': 1,
+ 'crawlera/request': 1,
+ 'crawlera/request/method/GET': 1,
+ 'crawlera/response': 1,
+ 'crawlera/response/status/200': 1,
+ 'downloader/request_bytes': 384,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 76825,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 6.006397,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 10, 3, 12, 30, 43, 10733),
+ 'log_count/DEBUG': 1,
+ 'log_count/INFO': 14,
+ 'log_count/WARNING': 1,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2020, 10, 3, 12, 30, 37, 4336)}
+2020-10-03 13:30:43 [scrapy.core.engine] INFO: Spider closed (finished)
+2020-10-03 13:30:43 [werkzeug] INFO: 127.0.0.1 - - [03/Oct/2020 13:30:43] "[37mGET /scrape HTTP/1.1[0m" 200 -
+2020-10-03 13:32:54 [werkzeug] INFO:  * Detected change in 'C:\\Users\\ASUS\\Desktop\\Stage2020\\PROJET\\amazon\\amazon\\spiders\\product_reviews.py', reloading
+2020-10-03 13:33:17 [scrapy.extensions.telnet] INFO: Telnet Password: 5b581267dc774ad0
+2020-10-03 13:33:17 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-10-03 13:33:18 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'random_useragent.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy_crawlera.CrawleraMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-10-03 13:33:18 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-10-03 13:33:18 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2020-10-03 13:33:18 [scrapy.core.engine] INFO: Spider opened
+2020-10-03 13:33:18 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-10-03 13:33:18 [root] INFO: Using crawlera at http://proxy.crawlera.com:8010 (apikey: 7cc8380)
+2020-10-03 13:33:18 [root] INFO: CrawleraMiddleware: disabling download delays on Scrapy side to optimize delays introduced by Crawlera. To avoid this behaviour you can use the CRAWLERA_PRESERVE_DELAY setting but keep in mind that this may slow down the crawl significantly
+2020-10-03 13:33:18 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-10-03 13:33:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.de/product-reviews/B073GQGSNY> (referer: None)
+2020-10-03 13:33:23 [product_reviews] INFO: User Agent : b"'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36'"
+2020-10-03 13:33:23 [product_reviews] INFO: Proxy ip address is b'85.208.123.238:8800'
+2020-10-03 13:33:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/product-reviews/B073GQGSNY>
+{'comment': 'Mir gefällt, dass das Gestell komplett aus Metall ist. Ebenfalls '
+            'gefällt mir die glänzende Optik der Flächen. Ja, nur der Flächen, '
+            'denn die Kanten glänzen leider nicht. Die sind nur Grob '
+            'geschliffen. Das finde ich in der Preisklasse wirklich '
+            'unangemessen. Außerdem wackelt das Ding, wenn es auf einer '
+            'glatten Oberläche steht, weil es offenbar nicht exakt gebogen '
+            'ist. Ich habe es zurückgeschickt und ein neues bestellt - '
+            'gleiches Problem. Aufgrund des Designs kippt es außerdem schnell '
+            'nach Hinten. Das liegt allerdings nicht am Kippeln, sondern '
+            'daran, dass es Hinten viel schwerer ist als Vorne. Mangels '
+            'Alternativen aus Metall behalte ich es trotzdem. Zufrieden bin '
+            'ich aber nicht.',
+ 'review_date': '2020-02-15 00:00:00',
+ 'review_title': 'Krumm und schlecht verarbeitet',
+ 'review_votes': '4 Personen fanden diese Informationen hilfreich',
+ 'scraping_date': '2020-10-03 13:33:23.098857',
+ 'star_rating': '2,0'}
+2020-10-03 13:33:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/product-reviews/B073GQGSNY>
+{'comment': 'Wenn es sich um einen Artikel handelt mit dem ich zufrieden bin '
+            'oder dieser tadellos funktioniert, man jedoch kaum etwas zu dem '
+            'Artikel schreiben kann bzw jeder weis um was es sich handelt / '
+            'wie es aussieht bzw wie es funktioniert dann möchte ich gleich '
+            'erwähnen das dies ein Standard-Text von mir ist den ich nur '
+            'kopiere und einfüge.Sollten sich jedoch Besonderheiten oder sogar '
+            'Mängel bei einem Produkt bemerkbar machen würde ich diesen Text '
+            'nicht verwenden und eine genau Produktbeschreibung abgeben.Ich '
+            'persönlich bin mit diesem Produkt sehr zufrieden und kann es '
+            'weiter empfehlen....mfg',
+ 'review_date': '2018-06-03 00:00:00',
+ 'review_title': 'Gutes Produkt',
+ 'review_votes': 'Eine Person fand diese Informationen hilfreich',
+ 'scraping_date': '2020-10-03 13:33:26.746066',
+ 'star_rating': '5,0'}
+2020-10-03 13:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/product-reviews/B073GQGSNY>
+{'comment': 'Ein schön verarbeiteter und funktionaler Artikel.Als sehr '
+            'praktisch empfand ich die auf der Rückseite angebrachte '
+            'Klebefläche, mit welcher man das Gestell an der Wand befestigen '
+            'kann. Ich habe es an unsere Fliesen im Badezimmer geklebt. Bisher '
+            'hält es super und macht einen stabilen Eindruck.Die Reinigung '
+            'beschränkt sich auf den unteren Bereich, auf dem sich die '
+            'abtropfende Flüssigkeit sammelt. Einmal mit einem feuchten Tuch '
+            'drüber gewischt, und die Fläche glänzt wieder wie neu.Ich bin '
+            'sehr zufireden damit und vergebe gerne 5 Sterne.',
+ 'review_date': '2018-06-03 00:00:00',
+ 'review_title': 'optisch ansprechend und gut verarbeitet',
+ 'review_votes': '3 Personen fanden diese Informationen hilfreich',
+ 'scraping_date': '2020-10-03 13:33:26.937537',
+ 'star_rating': '5,0'}
+2020-10-03 13:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/product-reviews/B073GQGSNY>
+{'comment': 'Die Halterung macht einen sehr schönen Eindruck und ist gut '
+            'verarbeitet. Man kann Sie an die Wand kleben. Ich nutze sie '
+            'freistehend auf einer Ablage. Die Zahnbürsten habe ich jedoch mit '
+            'dem Kopf nach oben eingehängt. Dies hat den Vorteil, dass '
+            'vorhandene Wasserreste optimal ablaufen können. Ich würde sie '
+            'aufgrund des schicken Designs jederzeit wieder kaufen.',
+ 'review_date': '2018-05-03 00:00:00',
+ 'review_title': 'Sehr schöne Halterung für Zahnbürsten',
+ 'review_votes': '3 Personen fanden diese Informationen hilfreich',
+ 'scraping_date': '2020-10-03 13:33:27.087248',
+ 'star_rating': '5,0'}
+2020-10-03 13:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/product-reviews/B073GQGSNY>
+{'comment': 'Nach so einem Aufbewahrungsständer für die Oral B Bürstenköpfe '
+            'haben wir schon lange gesucht. Wichtig war uns sicherer Halt der '
+            'Bürsten und eine Abtropffläche, falls doch mal Restwasser aus der '
+            'Bürste fließt, damit dies dann nicht an den Fliesen oder in den '
+            'Schrank runterläuft und hässliche Flecken macht.Die alles erfüllt '
+            'der Ständer. Die Bürsten halten kopfüber eingehängt absolut '
+            'sicher in der Halterung. Die Verarbeitung wirkt solide. Da er '
+            'noch neu ist, muss sich die Haltbarkeit noch bewehren. Wenn er '
+            'also in Zukunft nicht anfängt zu rosten, ist er eine durch und '
+            'durch gute Investition in die Ordnung in unserem Badezimmer '
+            ';-).Er steht bei uns im Spiegelschrank, zur Klebefähigkeit kann '
+            'ich daher keine Aussage treffen.',
+ 'review_date': '2019-04-03 00:00:00',
+ 'review_title': 'Solider, nützlicher Bürstenhalter für Oral B, mit '
+                 'Abtropffläche',
+ 'review_votes': 'Eine Person fand diese Informationen hilfreich',
+ 'scraping_date': '2020-10-03 13:33:27.169942',
+ 'star_rating': '5,0'}
+2020-10-03 13:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/product-reviews/B073GQGSNY>
+{'comment': 'Produkt wurde schnell geliefert und entspricht der '
+            'Produktbeschreibung.Wir haben im Haushalt drei elektrische Oral B '
+            'Zahnbürsten wobei immer 2 davon auf dieser Halterung stehen und '
+            'eine auf der Ladestation.Das Produkt wird Gebrauchsfertig '
+            'geliefert und es muss nichts montiert werden.An der Rückseite ist '
+            'ein Klebepad damit man diese z.B. an die Badezimmerfliesen kleben '
+            'kann. Wir haben das Produkt allerdings auf einem Wandregal stehen '
+            'und haben das Klebepad nicht benutzt. Daher kann ich nicht '
+            'bewerten wie gut das Pad klebt.Aber nun noch was zum Artikel '
+            'selbst.Punkt 1:Die Aufnahmen der elektrischen Zahnbürsten sind '
+            'aus Gummi und diese sind wiederum auf Stiften aus Edelstahl '
+            'aufgesteckt. Bedeutet das die Zahnbürsten, sofern die Halterung '
+            'nicht durch die Gegend getragen wird, den notwendigen Halt haben '
+            'und sich leicht vom Gummi wieder herunternehmen lassen.Punkt '
+            '2:Die Bürstenköpfe werden Kopfüber auf die Station von oben in '
+            'eins der dafür vorgesehenen Löcher eingehängt und können somit '
+            'nicht herausfallen. Das die Bürstenköpfe nach dem Gebrauch gut '
+            'ausgespült und trocken abgetupft werden müssen, da sich sonst '
+            'Schmutzwasser in der Abtropfrinne sammelt und diese '
+            'unappetitliche Verschmutzungen verursacht, brauche ich wohl nicht '
+            'erwähnen.Schlusswort:Ich würde den Artikel nochmals kaufen und '
+            'spreche eine Kaufempfehlung dafür aus. :)',
+ 'review_date': '2019-08-03 00:00:00',
+ 'review_title': 'Ein nützlicher Helfer für ein aufgeräumtes Badezimmer.',
+ 'review_votes': 'Eine Person fand diese Informationen hilfreich',
+ 'scraping_date': '2020-10-03 13:33:27.227209',
+ 'star_rating': '5,0'}
+2020-10-03 13:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/product-reviews/B073GQGSNY>
+{'comment': 'Das war eigentlich ein bisschen ein Risikokauf. Nun ja wir '
+            'verwenden die Philips Sonicare Zahnbürste mit den dazu gehörenden '
+            'Aufsätzen. Diese sind etwas lang.ABER: wir sind von und ganz '
+            'zufrieden, weil der Octopodis auf den vorgesehenen Platz passt, '
+            'die Aufsätze nicht rausfliegen - die werden unten gut abgestützt. '
+            'Die Vertiefung im Boden sorgt dafür.Es besteht ja auch die '
+            'Möglichkeit den Halter an die Wand zu kleben ...Wichtig ist, dass '
+            'der Halter nicht nach vorne kippen kann.Klare Kaufempfehlung!!!',
+ 'review_date': '2018-11-03 00:00:00',
+ 'review_title': 'Spitzenhalter für verschiedene Zahnbürstenaufsätze',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:33:27.282614',
+ 'star_rating': '5,0'}
+2020-10-03 13:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/product-reviews/B073GQGSNY>
+{'comment': 'Ein Stern ist noch einer zuviel!Sehr schlechte Verarbeitung, '
+            'Kanten nicht entgratet und sehr scharfkantig. Hohe '
+            'Verletzungsgefahr z. Bsp. beim Putzen.Die vier Kunststoff - '
+            "Füßchen ungleichmäßig angebracht. Das Teil 'kippelt' und fällt "
+            'schnell nach hinten um.Und für das Ganze werden fast 25 Euro '
+            'verlangt. Ich war entsetzt und habe das Teil postwendend '
+            'zurückgeschickt.Dank Amazon ist das ja glücklicherweise kein '
+            'Problem. Schade, denn optisch macht das Ding schon was her.Daher: '
+            'Bloß nicht kaufen! Habe jetzt etwas vergleichbares aus Kunststoff '
+            'gekauft. Leider!!',
+ 'review_date': '2020-04-03 00:00:00',
+ 'review_title': 'Schrott aus Fernost!',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:33:27.341500',
+ 'star_rating': '1,0'}
+2020-10-03 13:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/product-reviews/B073GQGSNY>
+{'comment': 'Ich habe den Halter für unsere Oral B Zahnbürstenköpfe gekauft. '
+            'Da wir 4 Personen sind, eine tolle, saubere Angelegenheit. Durch '
+            'das Edelstahl eine sehr moderne Optik und natürlich sehr '
+            'praktisch und hygienisch. Vorher hatte ich einen Halter zum '
+            'Kleben an den Fliesen. Dort sind die Halterungen ständig '
+            'heruntergefallen.Ich kann dieses Produkt nur weiterempfehlen.',
+ 'review_date': '2019-05-03 00:00:00',
+ 'review_title': 'TOP-Produkt',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:33:27.394352',
+ 'star_rating': '5,0'}
+2020-10-03 13:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/product-reviews/B073GQGSNY>
+{'comment': 'Habe sehr lange herumgesucht, um einen solchen Halter für meine '
+            'Sonicare-Bürsten zu finden. Die Suche hat sich absolut gelohnt. '
+            'OCTOPODIS bietet ein super Produkt an.Als sehr praktisch empfand '
+            'ich die auf der Rückseite angebrachte Klebefläche, mit welcher '
+            'man das Gestell an der Wand befestigen kann. Ich habe es an den '
+            'Fliesen im Badezimmer befestigt. Bisher hält es super und macht '
+            'einen stabilen Eindruck.',
+ 'review_date': '2020-01-10 00:00:00',
+ 'review_title': 'Schickes Design, super Qualität',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:33:27.445214',
+ 'star_rating': '5,0'}
+2020-10-03 13:33:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2> (referer: https://www.amazon.de/product-reviews/B073GQGSNY)
+2020-10-03 13:33:30 [product_reviews] INFO: User Agent : b"'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.91 Safari/537.36'"
+2020-10-03 13:33:30 [product_reviews] INFO: Proxy ip address is b'196.18.160.8:8800'
+2020-10-03 13:33:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2>
+{'comment': 'Hier wurde an alles gedacht:Die Bürstenaufsätze können nicht '
+            'herausfallen, lassen sich trotzdem leicht herausnehmen.Auf der '
+            'Rückseite ein Klebepad, von daher leicht an die Wand oder '
+            'Schranktür zu kleben.Ein Tropfblech fängt Wassereste aufUnd: sehr '
+            'gutes Material und dies auch sehr gut verabeitet. Ich bin '
+            'Feinblechner und erlaube mir mal diese Meinung',
+ 'review_date': '2019-11-03 00:00:00',
+ 'review_title': 'Der richtige Zahnbürstenhalter',
+ 'review_votes': 'Eine Person fand diese Informationen hilfreich',
+ 'scraping_date': '2020-10-03 13:33:30.930457',
+ 'star_rating': '5,0'}
+2020-10-03 13:33:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2>
+{'comment': 'Gute Lösung für elektronische Zahnbürsten Aufsätze. Passen gut in '
+            'den Spiegelschrank, sodass sie ordentlich und aufgeräumt sind. '
+            'Hinten kann man es auch ankleben, was wir nicht nutzen, da es so '
+            'stabil steht ohne umzufallen.',
+ 'review_date': '2020-02-06 00:00:00',
+ 'review_title': 'Gute Lösung für elektronische Zahnbürsten Aufsätze',
+ 'review_votes': 'Eine Person fand diese Informationen hilfreich',
+ 'scraping_date': '2020-10-03 13:33:31.054191',
+ 'star_rating': '3,0'}
+2020-10-03 13:33:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2>
+{'comment': 'Endlich eine vernünftige Halterung für die '
+            'Zahnbürstenaufsätze..Die Investition in Edelstahl hat sich '
+            'definitiv gelohnt. Flecken vom Abtropfen der Bürsten lassen sich '
+            'problemlos mit Wasser beseitigen. Ich benutze den Ständer stehend '
+            '(nicht an die Wand geklebt), das erleichtert das Reinigen.',
+ 'review_date': '2018-03-16 00:00:00',
+ 'review_title': 'Sehr gute Qualität !',
+ 'review_votes': 'Eine Person fand diese Informationen hilfreich',
+ 'scraping_date': '2020-10-03 13:33:31.124932',
+ 'star_rating': '5,0'}
+2020-10-03 13:33:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2>
+{'comment': 'Eine wirklich sinnvolle Sache. Die Aufsteckbürsten liegen nicht '
+            'mehr herum oder stehen in einem Schnapsglas oder was auch immer. '
+            'Sie hängen auf dieser Halterung und können Berührungsfrei '
+            'trocknen. Die Halterung hat einen guten Stand (ich habe sie nicht '
+            'befestigt) und ist einfach zu reinigen. Ich kann daran nichts '
+            'negatives finden.',
+ 'review_date': '2019-02-11 00:00:00',
+ 'review_title': 'Super.',
+ 'review_votes': 'Eine Person fand diese Informationen hilfreich',
+ 'scraping_date': '2020-10-03 13:33:31.180901',
+ 'star_rating': '5,0'}
+2020-10-03 13:33:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2>
+{'comment': 'Für einen 4 Personenhaushalt absolut empfehlenswert. Ein '
+            'stabiles, schönes Produkt und ein absolutes Muß für jedes Bad. '
+            'Keine kleckernden Ersatzzahnbürsten mehr, die die Schränke oder '
+            'Waschbecken verschmutzen. Die Wasserreste landen im Auffangbecken '
+            'und dieses kann leicht gereinigt/abgespült werden.',
+ 'review_date': '2018-01-20 00:00:00',
+ 'review_title': 'Schön und funktionell',
+ 'review_votes': 'Eine Person fand diese Informationen hilfreich',
+ 'scraping_date': '2020-10-03 13:33:31.240624',
+ 'star_rating': '5,0'}
+2020-10-03 13:33:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2>
+{'comment': 'Sieht auch live vor einem extrem wertig aus. Sehr passgenau bei '
+            'unseren Oral B Zahnbürsten. Leicht zu reinigen. Der '
+            'selbstklebepad, wird wahrscheinlich noch an der Wand kleben, wenn '
+            'das Haus zusammenfällt. Einmal angeklebt wahrscheinlich nie '
+            'wieder entfernbar :-)',
+ 'review_date': '2018-12-01 00:00:00',
+ 'review_title': 'Erfüllt sein Fumktion und sieht gut dabei aus',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:33:31.314463',
+ 'star_rating': '5,0'}
+2020-10-03 13:33:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2>
+{'comment': 'Nicht ganz billig, aber seinen Preis wert. Gut verarbeitet. Man '
+            'kann die Bürsten auch anders herum einhängen, also mit dem '
+            'Bürstenkopf nach oben. Unter dem Octupus befinden sich 4 weiche '
+            'Silikonfüßchen, so hat er einen rutschfesten Stand. Der '
+            'rückseitige Aufkleber von 3M zur Klebebefestigung sieht auch '
+            'vertrauenswürdig aus. Würde ich wieder kaufen.',
+ 'review_date': '2017-08-03 00:00:00',
+ 'review_title': 'Topp Produkt',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:33:31.397209',
+ 'star_rating': '5,0'}
+2020-10-03 13:33:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2>
+{'comment': 'Das Produkt ist sehr gut verarbeitet, es gibt keine schafen '
+            'Kanten. Habe den Halter im Juli 2019 gekauft und direkt im '
+            'Badezimmer an die Fliesen geklebt. Auch heute (13.09.2020) hält '
+            'er - bestückt mit 2 elektrischen Zahnbürsten und 4 Köpfen - '
+            'problemlos an der Wand. Bisher gibt es auch keine rostigen '
+            'Stellen.Ein tolles Produkt, welches ich vollumfänglich empfehlen '
+            'kann.',
+ 'review_date': '2020-09-03 00:00:00',
+ 'review_title': 'Hält was es verspricht. Auch nach einem Jahr noch top in '
+                 'Ordnung.',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:33:31.506912',
+ 'star_rating': '5,0'}
+2020-10-03 13:33:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2>
+{'comment': 'Der Bürstenhalter bekommt seinen zentralen Platz an der Wand über '
+            'dem Waschbecken. Aufgrund des Materials rechne ich mit einer '
+            'langen Nutzung des Artikels. Mir gefällt, dass Tropfen der '
+            'Bürsten aufgefangen werden und Bürsten wie Zahnbürsten zusammen '
+            'abgelegt werden können.Nachdem die erste Lieferung des Artikels '
+            'mangelhafte Entgratung der Kanten (ich gehe von einem Einzelfall '
+            'aus) aufwies und zurück ging, ist der Artikel jetzt sauber '
+            'verarbeitet.',
+ 'review_date': '2020-04-03 00:00:00',
+ 'review_title': 'Gute Lösung',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:33:31.573733',
+ 'star_rating': '5,0'}
+2020-10-03 13:33:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2>
+{'comment': 'Total überteuerter Artikel. Für oral B Bürstenköpfe und ähnliche '
+            'perfekt geeignet. Hygienisch und praktisch. Meine '
+            'Sonicare-Bürstenköpfe passen nicht! Sie rutschen durch. Habs '
+            'trotzdem behalten weil meine Jungs Oral-B haben und diese Köpfe '
+            'passen.',
+ 'review_date': '2019-02-01 00:00:00',
+ 'review_title': 'Nicht für Sonicare-Bürstenköpfe geeignet -Oral-B passt',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:33:31.642559',
+ 'star_rating': '3,0'}
+2020-10-03 13:33:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_3?ie=UTF8&pageNumber=3> (referer: https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&pageNumber=2)
+2020-10-03 13:33:34 [product_reviews] INFO: User Agent : b"'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36'"
+2020-10-03 13:33:34 [product_reviews] INFO: Proxy ip address is b'181.215.83.113:3128'
+2020-10-03 13:33:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_3?ie=UTF8&pageNumber=3>
+{'comment': 'Leider nicht zu empfehlen.Klebt nur für einen kurzen MomentHaben '
+            'es nun mit tesa versucht.. keine Chan de... echt schade.20 Euro '
+            'für umsonst!!!!',
+ 'review_date': '2018-12-03 00:00:00',
+ 'review_title': 'Leider HÄLT es nicht was es verspricht',
+ 'review_votes': '2 Personen fanden diese Informationen hilfreich',
+ 'scraping_date': '2020-10-03 13:33:34.935187',
+ 'star_rating': '3,0'}
+2020-10-03 13:33:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_3?ie=UTF8&pageNumber=3>
+{'comment': 'Lässt sich gut reinigen, auch wenn man es an die Wand geklebt '
+            'hat.Die Bürstenköpfe hängen gut und geschützt.Ohne das Ding zu '
+            'befestigen, ist es nicht sehr standhaft.',
+ 'review_date': '2019-12-05 00:00:00',
+ 'review_title': 'super',
+ 'review_votes': '2 Personen fanden diese Informationen hilfreich',
+ 'scraping_date': '2020-10-03 13:33:34.988038',
+ 'star_rating': '5,0'}
+2020-10-03 13:33:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_3?ie=UTF8&pageNumber=3>
+{'comment': 'An sich ein schickes Teil. Aber wenn man es gern sauber im Bad '
+            'hat muss man es täglich zweimal reinigen. Sonst sieht das zu '
+            'siffig aus. Damit auch nicht geeignet für die Befestigung an der '
+            'Wand.',
+ 'review_date': '2018-09-03 00:00:00',
+ 'review_title': 'Toll mit Abstrichen',
+ 'review_votes': 'Eine Person fand diese Informationen hilfreich',
+ 'scraping_date': '2020-10-03 13:33:35.059948',
+ 'star_rating': '3,0'}
+2020-10-03 13:33:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_3?ie=UTF8&pageNumber=3>
+{'comment': 'Billigstes Material mit schlechter Verarbeitung. Scharfe Kanten '
+            'und schief aufgeklebte Gummifüsse. Materialwert vermutlich wenige '
+            'Cent. Preis/Leistung wäre bei 9,99 Euro gerade noch angemessen. '
+            'Knapp 22 Euro sind jedoch Wucher!',
+ 'review_date': '2019-10-03 00:00:00',
+ 'review_title': 'Maßlos überteuert und schlecht verarbeitet',
+ 'review_votes': 'Eine Person fand diese Informationen hilfreich',
+ 'scraping_date': '2020-10-03 13:33:35.165541',
+ 'star_rating': '1,0'}
+2020-10-03 13:33:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_3?ie=UTF8&pageNumber=3>
+{'comment': 'Leichte Anbringung durch den Aufkleber. Super Haftung. Da die '
+            'Bürste mit dem Schaft eingehängt wird, tropft auch nichts nach. '
+            'Schöne Optik.',
+ 'review_date': '2020-07-03 00:00:00',
+ 'review_title': 'Praktischer Helfer!',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:33:35.232395',
+ 'star_rating': '5,0'}
+2020-10-03 13:33:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_3?ie=UTF8&pageNumber=3>
+{'comment': 'Bürsten lasse sich super aufhängen und abnehmen.Hochwertiges '
+            'Material (Edelstahl). Sieht dazu auch sehr gut aus.',
+ 'review_date': '2020-07-03 00:00:00',
+ 'review_title': 'Aufbewahrung von Zahnbürsten',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:33:35.290241',
+ 'star_rating': '5,0'}
+2020-10-03 13:33:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_3?ie=UTF8&pageNumber=3>
+{'comment': 'Anfangs war ich ehr skeptisch ob ein kleiner Kleber das Gewicht '
+            'zweier Zahnbürsten und die grobmotorik eines 4 jährigen '
+            'standhalten würdeAber tatsächlich',
+ 'review_date': '2019-10-03 00:00:00',
+ 'review_title': 'Super',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:33:35.381964',
+ 'star_rating': '5,0'}
+2020-10-03 13:33:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_3?ie=UTF8&pageNumber=3>
+{'comment': 'Sieht stilvoll und hochwertige aus. Es erfüllt seinen Zweck.Das '
+            'witzigste finde ich den Oktopus. Wie von Marvel das Hydrasymbol '
+            ';)',
+ 'review_date': '2018-07-03 00:00:00',
+ 'review_title': 'Cooles Teil',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:33:35.487012',
+ 'star_rating': '5,0'}
+2020-10-03 13:33:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_3?ie=UTF8&pageNumber=3>
+{'comment': 'Ein super Badezimmer Tool. Endlich ordentlich aufgereihten '
+            'Zahnbürsten. Da der Halter aus Edelstahl ist kann man ihn auch '
+            'problemlos reinigen',
+ 'review_date': '2018-12-04 00:00:00',
+ 'review_title': 'Toller Halter für Zahnbürstenköpfe',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:33:35.587509',
+ 'star_rating': '5,0'}
+2020-10-03 13:33:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_3?ie=UTF8&pageNumber=3>
+{'comment': 'Sehr gute Verarbeitung und sieht sehr gut aus. Klebt mit den '
+            'mitgelieferten Klebepad sehr fest auf den Fliesen. Die '
+            'Aufsteckbürsten von OralB halten perfekt und können abtropfen. '
+            'Das war immer ein Problem bei der Originalablage von OralB, das '
+            'Wasser hat sich dort gesammelt...',
+ 'review_date': '2020-04-03 00:00:00',
+ 'review_title': 'Hält was es verspricht!',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:33:35.695162',
+ 'star_rating': '5,0'}
+2020-10-03 13:33:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_4?ie=UTF8&pageNumber=4> (referer: https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_3?ie=UTF8&pageNumber=3)
+2020-10-03 13:33:39 [product_reviews] INFO: User Agent : b"'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'"
+2020-10-03 13:33:39 [product_reviews] INFO: Proxy ip address is b'104.247.148.55:8800'
+2020-10-03 13:33:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_4?ie=UTF8&pageNumber=4>
+{'comment': 'Super Teil, steht stabil an der Wand. Schaut elegant aus, leicht '
+            'zu reinigen, jederzeit wieder',
+ 'review_date': '2019-05-03 00:00:00',
+ 'review_title': 'Elegant, robust und stabil',
+ 'review_votes': 'Eine Person fand diese Informationen hilfreich',
+ 'scraping_date': '2020-10-03 13:33:39.525815',
+ 'star_rating': '5,0'}
+2020-10-03 13:33:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_4?ie=UTF8&pageNumber=4>
+{'comment': 'Endluch eine tolle Halterung für elektrische Zahnbürstenköpfe, '
+            'bei der diese hygienisch aufbewahrt werden. Sieht hochwertig aus, '
+            'ist leicht zu reinigen und sowohl aufzustellen, wie an der Wand '
+            'zu befestigen. Ich würde diesen Artikel jederzeit wieder kaufen',
+ 'review_date': '2019-01-30 00:00:00',
+ 'review_title': 'Hygienisch und hochwertig',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:33:39.712281',
+ 'star_rating': '5,0'}
+2020-10-03 13:33:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_4?ie=UTF8&pageNumber=4>
+{'comment': 'Sieht super aus, mal was anderes und Qualität ist sehr gut. '
+            'Einfach und schnell angebracht 👍🏼',
+ 'review_date': '2020-01-11 00:00:00',
+ 'review_title': 'Preis Leistung passt',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:33:39.858889',
+ 'star_rating': '5,0'}
+2020-10-03 13:33:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_4?ie=UTF8&pageNumber=4>
+{'comment': 'Der Halter hat eine angenehme Haptik mit solidem Gewicht (in '
+            'Relation zu den Abmessungen :-) und ist sehr hochwertig '
+            'verarbeitet. Das im Zusammenspiel mit dem Design und einem '
+            'sicheren Stand (wir haben ihn nicht an die Wand geklebt) machen '
+            'ihn für mich zu einem sehr empfehlenswerten Kauf.',
+ 'review_date': '2017-10-03 00:00:00',
+ 'review_title': 'Wertiges Produkt',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:33:40.009484',
+ 'star_rating': '5,0'}
+2020-10-03 13:33:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_4?ie=UTF8&pageNumber=4>
+{'comment': 'Gutes Produkt. Wertigkeit in der Verarbeitung.',
+ 'review_date': '2020-04-03 00:00:00',
+ 'review_title': 'Sehr gutes Produkt',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:33:40.163118',
+ 'star_rating': '5,0'}
+2020-10-03 13:33:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_4?ie=UTF8&pageNumber=4>
+{'comment': 'Top Verarbeitung und Material - Für den Preis 100% Empfehlung '
+            ':-))))',
+ 'review_date': '2019-12-30 00:00:00',
+ 'review_title': 'Edel -Edel !',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:33:40.317701',
+ 'star_rating': '5,0'}
+2020-10-03 13:33:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_4?ie=UTF8&pageNumber=4>
+{'comment': 'Alles super, schnelle Lieferung , Ware wie beschrieben, sieht '
+            'sehr edel aus.Danke!!!',
+ 'review_date': '2018-11-03 00:00:00',
+ 'review_title': 'Top!!!',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:33:40.468307',
+ 'star_rating': '5,0'}
+2020-10-03 13:33:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_4?ie=UTF8&pageNumber=4>
+{'comment': 'Spitzen Qualität ! nichts zu beanstanden ! Preis leistung OK !',
+ 'review_date': '2019-01-04 00:00:00',
+ 'review_title': 'Top',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:33:40.571022',
+ 'star_rating': '5,0'}
+2020-10-03 13:33:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_4?ie=UTF8&pageNumber=4>
+{'comment': 'A bit disappointed, the edges are quite rough and the overall '
+            'quality of the stainless steel is not as expected after reading '
+            'all the other clients’ comments.',
+ 'review_date': '2020-07-03 00:00:00',
+ 'review_title': 'Quality issue',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:33:40.649773',
+ 'star_rating': '3,0'}
+2020-10-03 13:33:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_4?ie=UTF8&pageNumber=4>
+{'comment': 'Der Zahnbürstenhalter sieht nicht nur toll aus, er ist auch sehr '
+            'praktisch, lässt sich leicht anbringen und ist ein Blickfang am '
+            'Waschbecken.',
+ 'review_date': '2020-04-03 00:00:00',
+ 'review_title': 'Tolle Optik, sehr praktisch!',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:33:40.753533',
+ 'star_rating': '5,0'}
+2020-10-03 13:33:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_5?ie=UTF8&pageNumber=5> (referer: https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_4?ie=UTF8&pageNumber=4)
+2020-10-03 13:33:44 [product_reviews] INFO: User Agent : b"'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36'"
+2020-10-03 13:33:44 [product_reviews] INFO: Proxy ip address is b'163.198.87.227:8800'
+2020-10-03 13:33:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_5?ie=UTF8&pageNumber=5>
+{'comment': 'Echt sehr schön. Schöner wie auf dem Bildern.',
+ 'review_date': '2020-05-03 00:00:00',
+ 'review_title': 'Prima',
+ 'review_votes': 'Eine Person fand diese Informationen hilfreich',
+ 'scraping_date': '2020-10-03 13:33:44.201074',
+ 'star_rating': '5,0'}
+2020-10-03 13:33:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_5?ie=UTF8&pageNumber=5>
+{'comment': 'Endlich habe ich eine schöne Halterung für alle 4 Aufsätze '
+            'unserer Elektrischen Zahnbürste!',
+ 'review_date': '2018-12-03 00:00:00',
+ 'review_title': 'Sehr praktisch',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:33:44.335777',
+ 'star_rating': '5,0'}
+2020-10-03 13:33:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_5?ie=UTF8&pageNumber=5>
+{'comment': 'Produkt kam zweimal verkratzt und mit Beschädigungen an. Die '
+            'Seiten sind z.T. scharfkantig.',
+ 'review_date': '2019-12-20 00:00:00',
+ 'review_title': 'Produktqualität unzureichend',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:33:44.425473',
+ 'star_rating': '1,0'}
+2020-10-03 13:33:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_5?ie=UTF8&pageNumber=5>
+{'comment': 'Tolles Produkt. Endlich können die Zahnbürstenköpfe abtrocknen.',
+ 'review_date': '2019-12-11 00:00:00',
+ 'review_title': 'Tolle Idee',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:33:44.531191',
+ 'star_rating': '5,0'}
+2020-10-03 13:33:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_5?ie=UTF8&pageNumber=5>
+{'comment': 'Ist genau das richtige für die Zahnbürste.',
+ 'review_date': '2019-11-03 00:00:00',
+ 'review_title': '.',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:33:44.623942',
+ 'star_rating': '4,0'}
+2020-10-03 13:33:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_5?ie=UTF8&pageNumber=5>
+{'comment': 'Top Qualität. Egal ob an die Wand geklebt oder hingestellt ein '
+            'Blickfang.Auch wenn der Preis etwas hoch ist, kann ich es nur '
+            'empfehlen.',
+ 'review_date': '2020-02-04 00:00:00',
+ 'review_title': 'Ein Blickfang im Bad',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:33:44.725671',
+ 'star_rating': '5,0'}
+2020-10-03 13:33:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_5?ie=UTF8&pageNumber=5>
+{'comment': 'Der Artikel ist solide, standfest, aus Edelstahl und deshalb '
+            'leicht zu reinigen. Würde 5 Sterne vergeben, wenn er etwas '
+            'kleiner wäre.',
+ 'review_date': '2019-12-13 00:00:00',
+ 'review_title': 'Halter für Zahnbürstenköpfe',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:33:44.826440',
+ 'star_rating': '4,0'}
+2020-10-03 13:33:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_5?ie=UTF8&pageNumber=5>
+{'comment': 'Sehr edle Verarbeitung, die Bürstenaufsätze meiner Philips '
+            'Sonicare passen perfekt hinein',
+ 'review_date': '2019-12-12 00:00:00',
+ 'review_title': 'Weiterempfehlung',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:33:44.903364',
+ 'star_rating': '5,0'}
+2020-10-03 13:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_5?ie=UTF8&pageNumber=5>
+{'comment': 'Zwar nicht ganz billig, aber der schöne Edelstahlständer erfüllt '
+            'seine Aufgabe hervorragend!Sehr empfehlenswert!',
+ 'review_date': '2019-11-03 00:00:00',
+ 'review_title': 'Es sehr solides, funktionelles Produkt',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:33:44.957085',
+ 'star_rating': '5,0'}
+2020-10-03 13:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_5?ie=UTF8&pageNumber=5>
+{'comment': 'Very cool - and really helped keep our brush heads neat',
+ 'review_date': '2019-02-07 00:00:00',
+ 'review_title': 'Pretty - and functional',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:33:45.009944',
+ 'star_rating': '5,0'}
+2020-10-03 13:33:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_6?ie=UTF8&pageNumber=6> (referer: https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_5?ie=UTF8&pageNumber=5)
+2020-10-03 13:33:48 [product_reviews] INFO: User Agent : b"'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36'"
+2020-10-03 13:33:48 [product_reviews] INFO: Proxy ip address is b'191.96.211.176:3128'
+2020-10-03 13:33:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_6?ie=UTF8&pageNumber=6>
+{'comment': 'Produkt hält, was es verspricht',
+ 'review_date': '2019-07-03 00:00:00',
+ 'review_title': 'Produkt hält, was es verspricht',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:33:48.434145',
+ 'star_rating': '5,0'}
+2020-10-03 13:33:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_6?ie=UTF8&pageNumber=6>
+{'comment': 'Sieht sehr hochwertig aus und hält was es verspricht',
+ 'review_date': '2019-01-06 00:00:00',
+ 'review_title': 'Gute Verarbeitung :)',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:33:48.488034',
+ 'star_rating': '5,0'}
+2020-10-03 13:33:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_6?ie=UTF8&pageNumber=6>
+{'comment': 'Ein tolles Teil. Schaut gut aus. Eine tolle Aufwertung für das '
+            'Bad.',
+ 'review_date': '2019-11-03 00:00:00',
+ 'review_title': 'Wer eine edle Halterung braucht, ist hier richtig!',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:33:48.544909',
+ 'star_rating': '5,0'}
+2020-10-03 13:33:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_6?ie=UTF8&pageNumber=6>
+{'comment': 'Guter und schneller Versand',
+ 'review_date': '2018-06-03 00:00:00',
+ 'review_title': 'Guter Einkauf',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:33:48.599839',
+ 'star_rating': '5,0'}
+2020-10-03 13:33:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_6?ie=UTF8&pageNumber=6>
+{'comment': 'Super schnell erhalten, gute Qualität.',
+ 'review_date': '2020-02-12 00:00:00',
+ 'review_title': 'Schnellstmöglich erhalten',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:33:48.655555',
+ 'star_rating': '5,0'}
+2020-10-03 13:33:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_6?ie=UTF8&pageNumber=6>
+{'comment': 'Gutes Material, schönes Design.',
+ 'review_date': '2020-04-03 00:00:00',
+ 'review_title': 'Gutes Material',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:33:48.713742',
+ 'star_rating': '5,0'}
+2020-10-03 13:33:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_6?ie=UTF8&pageNumber=6>
+{'comment': 'Everything is like expected:)',
+ 'review_date': '2020-04-03 00:00:00',
+ 'review_title': '.',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:33:48.772274',
+ 'star_rating': '5,0'}
+2020-10-03 13:33:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_6?ie=UTF8&pageNumber=6>
+{'comment': 'Amazon',
+ 'review_date': '2019-02-12 00:00:00',
+ 'review_title': 'Bazzucchi',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:33:48.830118',
+ 'star_rating': '5,0'}
+2020-10-03 13:33:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_6?ie=UTF8&pageNumber=6>
+{'comment': 'Alles super',
+ 'review_date': '2020-03-29 00:00:00',
+ 'review_title': 'Super',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:33:48.882978',
+ 'star_rating': '5,0'}
+2020-10-03 13:33:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/OCTOPODIS-elektrische-selbstklebend-freistehende-Installation/product-reviews/B073GQGSNY/ref=cm_cr_arp_d_paging_btm_6?ie=UTF8&pageNumber=6>
+{'comment': 'Generell zwar gute Verarbeitung, aber die Klebeflächen an der '
+            'Unterseite sind sehr schlampig angebracht und lassen sich nicht '
+            'versetzen.',
+ 'review_date': '2020-01-17 00:00:00',
+ 'review_title': 'Gut',
+ 'review_votes': '',
+ 'scraping_date': '2020-10-03 13:33:48.956785',
+ 'star_rating': '4,0'}

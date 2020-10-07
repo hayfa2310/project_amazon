@@ -1,0 +1,8 @@
+crochet==1.12.0
+flask==1.1.2
+scrapy==2.2.0
+dateparser==0.7.6
+colorlog==4.2.1
+python-dotenv==0.14.0
+scrapy-random-useragent==0.2
+scrapy-crawlera==1.7.0
