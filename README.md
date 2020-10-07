@@ -1,4 +1,4 @@
-# Amazon Scraper All Marketplaces
+# Amazon Scrapper Project
 
 The objective of this project is to retrieve several pieces of information about Amazon through scrapping. Primarily, the main goal is to retrieve all product reviews on all marketplaces where the product is located. The data extracted by the Scraper can be fetched by accessing the endpoints given by the Flask RESTful API.
 
